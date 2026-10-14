@@ -15,6 +15,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 from urllib.request import urlopen
 from zipfile import ZipFile, is_zipfile
 from scripts.updates import COLUMNS, normalize, plan_update
+from scripts.corrections import apply_reviewed_corrections
 
 PAGE_URL = ('https://www.nerc.gov.ua/monitoring-rinku-elektrichnoyi-energiyi/'
             'indykatory-ta-pokaznyky-monitorynhu-rynku-elektrychnoi-enerhii-'
@@ -83,7 +84,7 @@ def read_workbook(payload, filename_date):
     columns = [c for c in frame.columns if not str(c).startswith('Unnamed')]
     if columns != list(COLUMNS): raise ValueError('Unexpected workbook columns')
     rows = frame[columns].astype(object).where(pd.notna(frame[columns]), None).to_dict('records')
-    return list(normalize(rows).values())
+    return rows
 
 def atomic_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -105,7 +106,13 @@ def accept_payload(root, url, version, payload, reader=read_workbook):
         raise ValueError('Source version older than current version')
     if old and digest == old['sha256']:
         return {'status': 'unchanged', 'sha256': digest}
-    incoming = reader(payload, version)
+    # Preserve source even when validation rejects it. This is not published data.
+    raw = root / 'raw' / digest
+    raw.mkdir(parents=True, exist_ok=True)
+    (raw / 'source.xlsx').write_bytes(payload)
+    incoming, corrections = apply_reviewed_corrections(reader(payload, version))
+    atomic_json(raw / 'corrections.json', corrections)
+    incoming = list(normalize(incoming).values())
     previous = []
     if old:
         previous = json.loads((root / old['snapshot'] / 'rows.json').read_text(encoding='utf-8'))
@@ -123,6 +130,7 @@ def accept_payload(root, url, version, payload, reader=read_workbook):
         writer.writeheader(); writer.writerows(update['rows'])
     audit = {k: v for k, v in update.items() if k != 'rows'}
     audit.update({'status': 'updated' if update['changed'] else 'file_only_change',
+                  'corrections': corrections,
                   'source_url': url, 'version_date': version, 'sha256': digest,
                   'previous_sha256': old['sha256'] if old else None,
                   'retrieved_at': datetime.now(timezone.utc).isoformat()})
