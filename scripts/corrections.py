@@ -22,7 +22,7 @@ def number(value):
         raise ValueError('Correction rule requires values at source 0.001 precision')
     return rounded
 
-def apply_reviewed_corrections(rows):
+def apply_export_corrections(rows):
     prepared = deepcopy(rows)
     block = [r for r in prepared if r['Рік'] == 2025
              and r['Показник'].strip() == 'Експорт' and r['Місяць'] in PERIODS]
@@ -62,4 +62,61 @@ def apply_reviewed_corrections(rows):
             raise ValueError(f'Correction leaves incomplete or duplicated countries: {month}')
         if sum((number(r['Значення']) for r in details), Decimal(0)) != number(totals[0]['Значення']):
             raise ValueError(f'Correction does not reconcile monthly total: {month}')
+    return prepared, journal
+
+
+IMPORT_RULES = (
+    (2022, ('Серпень', 'Вересень', 'Жовтень'),
+     (('0.187', 'Серпень', 'Вересень'), ('1.492', 'Вересень', 'Жовтень'))),
+    (2023, PERIODS,
+     (('115.596', 'Липень', 'Серпень'), ('23.824', 'Серпень', 'Вересень'),
+      ('17.207', 'Вересень', 'Жовтень'))),
+)
+
+
+def apply_reviewed_corrections(rows):
+    prepared, journal = apply_export_corrections(rows)
+    for year, months, moves in IMPORT_RULES:
+        block = [r for r in prepared if r['Рік'] == year
+                 and r['Показник'].strip() == 'Імпорт' and r['Місяць'] in months]
+        if not block:
+            continue
+        expected = {'Білорусь', 'Румунія', 'Словаччина', 'Угорщина'}
+        if year == 2023:
+            expected |= {'Молдова', 'Польща'}
+        for month in months:
+            details = [r for r in block if r['Місяць'] == month and r['Категорія'].strip() != 'усього']
+            categories = [r['Категорія'].strip() for r in details]
+            required = expected | ({'Молдова'} if year == 2022 and month != 'Серпень' else set())
+            if len(categories) != len(required) or set(categories) != required:
+                raise ValueError(f'Reviewed import countries incomplete or duplicated: {year} {month}')
+        if any(r['Одиниці виміру'].strip() != 'тис. МВт×год' for r in block):
+            raise ValueError('Reviewed import block unit changed')
+        rule_id = f'import-{year}-monthly-total-shifts-v1'
+        for amount, old, new in moves:
+            matching = [r for r in block if r['Категорія'].strip() == 'усього'
+                        and number(r['Значення']) == Decimal(amount)]
+            source = [r for r in matching if r['Місяць'] == old]
+            destination = [r for r in matching if r['Місяць'] == new]
+            if len(source) == 1 and not destination:
+                record = source[0]
+                quarter = 'IV' if new == 'Жовтень' else 'ІІІ'
+                journal.append({'rule_id': rule_id, 'year': year, 'indicator': 'Імпорт',
+                                'category': 'усього', 'value': amount,
+                                'old_month': old, 'new_month': new,
+                                'old_quarter': record['Квартал'], 'new_quarter': quarter,
+                                'status': 'applied',
+                                'basis': 'Reviewed reconstruction; all affected monthly totals reconcile exactly'})
+                record['Місяць'], record['Квартал'] = new, quarter
+            elif not source and len(destination) == 1:
+                journal.append({'rule_id': rule_id, 'category': 'усього', 'value': amount,
+                                'new_month': new, 'status': 'already_corrected'})
+            else:
+                raise ValueError(f'Reviewed import correction ambiguous or changed: {year} {amount}')
+        for month in months:
+            monthly = [r for r in block if r['Місяць'] == month]
+            totals = [r for r in monthly if r['Категорія'].strip() == 'усього']
+            details = [r for r in monthly if r['Категорія'].strip() != 'усього']
+            if len(totals) != 1 or sum((number(r['Значення']) for r in details), Decimal(0)) != number(totals[0]['Значення']):
+                raise ValueError(f'Import correction does not reconcile monthly total: {year} {month}')
     return prepared, journal
