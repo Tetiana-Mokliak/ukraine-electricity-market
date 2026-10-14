@@ -1,0 +1,859 @@
+{
+  "groups_checked": 162,
+  "flagged_groups": 20,
+  "tolerance_thousand_mwh": 0.003,
+  "note": "Arithmetic diagnostics only. A matching combination does not establish which source rows are correct.",
+  "issues": [
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "status": "duplicate_keys_reconcilable",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 2088,
+            "value": 106.275
+          },
+          {
+            "excel_row": 2141,
+            "value": 106.275
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 2089,
+            "value": 152.845
+          },
+          {
+            "excel_row": 2142,
+            "value": 152.845
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2090,
+            "value": 442.357
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2093,
+            "value": 92.611
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2094,
+            "value": 90.626
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        442.357
+      ]
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "status": "duplicate_keys_reconcilable",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2095,
+            "value": 0
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2096,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2097,
+            "value": 0
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2098,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2099,
+            "value": 0.187
+          },
+          {
+            "excel_row": 2143,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        0
+      ]
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "status": "duplicate_keys_reconcilable",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 2144,
+            "value": 111.47
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 2145,
+            "value": 105.29
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2146,
+            "value": 82.303
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2147,
+            "value": 120.716
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2148,
+            "value": 0
+          },
+          {
+            "excel_row": 2152,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2149,
+            "value": 419.779
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        419.779
+      ]
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2153,
+            "value": 0
+          }
+        ],
+        "Молдова": [
+          {
+            "excel_row": 2154,
+            "value": 0.187
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2155,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2156,
+            "value": 0
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2157,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2158,
+            "value": 1.492
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        0.187
+      ]
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "status": "missing_total",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2207,
+            "value": 0
+          }
+        ],
+        "Молдова": [
+          {
+            "excel_row": 2208,
+            "value": 1.101
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2209,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2210,
+            "value": 0.391
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2211,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        1.492
+      ]
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "усього": [
+          {
+            "excel_row": 2366,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": []
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "усього": [
+          {
+            "excel_row": 2417,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": []
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "усього": [
+          {
+            "excel_row": 2467,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": []
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "status": "duplicate_keys_reconcilable",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2689,
+            "value": 0
+          }
+        ],
+        "Молдова": [
+          {
+            "excel_row": 2690,
+            "value": 13.862
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 2691,
+            "value": 0.8
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2692,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2693,
+            "value": 58.636
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2694,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2695,
+            "value": 73.298
+          },
+          {
+            "excel_row": 2696,
+            "value": 115.596
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        73.298
+      ]
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2748,
+            "value": 0
+          }
+        ],
+        "Молдова": [
+          {
+            "excel_row": 2749,
+            "value": 20.237
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 2750,
+            "value": 9.41
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2751,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2752,
+            "value": 85.949
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2753,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2754,
+            "value": 23.824
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        115.596
+      ]
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2804,
+            "value": 0
+          }
+        ],
+        "Молдова": [
+          {
+            "excel_row": 2805,
+            "value": 5.442
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 2806,
+            "value": 0
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2807,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2808,
+            "value": 18.382
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2809,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 2810,
+            "value": 17.207
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        23.824
+      ]
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "status": "missing_total",
+      "rows_by_category": {
+        "Білорусь": [
+          {
+            "excel_row": 2860,
+            "value": 0
+          }
+        ],
+        "Молдова": [
+          {
+            "excel_row": 2861,
+            "value": 1.519
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 2862,
+            "value": 1.65
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 2863,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 2864,
+            "value": 14.038
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 2865,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        17.207
+      ]
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "status": "duplicate_keys_reconcilable",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 3367,
+            "value": 0
+          },
+          {
+            "excel_row": 3368,
+            "value": 0
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 3369,
+            "value": 0
+          },
+          {
+            "excel_row": 3370,
+            "value": 0
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 3371,
+            "value": 0
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 3372,
+            "value": 0
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 3373,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 3374,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        0
+      ]
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 3428,
+            "value": 0
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 3429,
+            "value": 0.619
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 3430,
+            "value": 0
+          },
+          {
+            "excel_row": 3431,
+            "value": 0.029
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 3432,
+            "value": 0
+          },
+          {
+            "excel_row": 3433,
+            "value": 0
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 3434,
+            "value": 0
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 3435,
+            "value": 0
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        0.619,
+        0.648
+      ]
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 3487,
+            "value": 3.501
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 3488,
+            "value": 7.359
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 3489,
+            "value": 15.556
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 3490,
+            "value": 14.398
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 3491,
+            "value": 0.043
+          },
+          {
+            "excel_row": 3492,
+            "value": 20.267
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 3493,
+            "value": 0.691
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        40.857,
+        61.081
+      ]
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "усього": [
+          {
+            "excel_row": 3545,
+            "value": 61.081
+          }
+        ]
+      },
+      "possible_sums_one_per_country": []
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "status": "duplicate_keys_reconcilable",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 4059,
+            "value": 115.69
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 4060,
+            "value": 12.284
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 4061,
+            "value": 36.757
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 4062,
+            "value": 28.272999999999996
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 4063,
+            "value": 93.054
+          },
+          {
+            "excel_row": 4064,
+            "value": 171.65699999999998
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 4065,
+            "value": 286.058
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        286.058,
+        364.661
+      ]
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 4119,
+            "value": 128.829
+          },
+          {
+            "excel_row": 4120,
+            "value": 179.136
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 4121,
+            "value": 22.835
+          },
+          {
+            "excel_row": 4122,
+            "value": 105.821
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 4123,
+            "value": 64.961
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 4124,
+            "value": 64.83399999999999
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 4125,
+            "value": 453.116
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        281.459,
+        331.766,
+        364.445,
+        414.752
+      ]
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Молдова": [
+          {
+            "excel_row": 4177,
+            "value": 31.134999999999998
+          }
+        ],
+        "Польща": [
+          {
+            "excel_row": 4178,
+            "value": 4.029999999999999
+          }
+        ],
+        "Румунія": [
+          {
+            "excel_row": 4179,
+            "value": 103.227
+          },
+          {
+            "excel_row": 4180,
+            "value": 14.896
+          }
+        ],
+        "Словаччина": [
+          {
+            "excel_row": 4181,
+            "value": 1.08
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 4182,
+            "value": 254.329
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 4183,
+            "value": 643.593
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        305.47,
+        393.801
+      ]
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "status": "not_reconciled",
+      "rows_by_category": {
+        "Словаччина": [
+          {
+            "excel_row": 4235,
+            "value": 1.884
+          }
+        ],
+        "Угорщина": [
+          {
+            "excel_row": 4236,
+            "value": 39.324000000000005
+          }
+        ],
+        "усього": [
+          {
+            "excel_row": 4237,
+            "value": 91.269
+          }
+        ]
+      },
+      "possible_sums_one_per_country": [
+        41.208
+      ]
+    }
+  ]
+}
