@@ -3,6 +3,9 @@ on:
   push:
     paths:
       - 'scripts/updates.py'
+      - 'scripts/corrections.py'
+      - 'scripts/collect_nerc.py'
+      - 'scripts/diagnose_source.py'
       - 'tests/**'
       - '.github/workflows/test-updates.yml'
   workflow_dispatch:

@@ -231,6 +231,113 @@ EXPORT_2024_SOURCE = [{'Рік': 2024,
   'Значення': 61.081}]
 
 
+class ReviewedCleanup(unittest.TestCase):
+    def fixture(self):
+        rows = []
+        for year, month, values in (
+            (2022, 'Вересень', [111.470, 105.290, 82.303, 120.716, 0, 419.779]),
+            (2024, 'Липень', [0, 0, 0, 0, 0, 0]),
+            (2022, 'Жовтень', [34.735, 53.010, 35.511, 35.892, None, 159.148]),
+        ):
+            for category, value in zip(['Молдова', 'Польща', 'Румунія', 'Словаччина', 'Угорщина', 'усього'], values):
+                if value is None:
+                    continue
+                rows.append({'Рік': year, 'Місяць': month, 'Квартал': 'IV' if month == 'Жовтень' and category in ('Словаччина', 'усього') else 'ІІІ',
+                             'Показник': 'Експорт', 'Категорія': category,
+                             'Одиниці виміру': 'тис. МВт×год', 'Значення': value})
+                if (year, month, category) in ((2022, 'Вересень', 'Угорщина'), (2024, 'Липень', 'Молдова'), (2024, 'Липень', 'Польща')):
+                    rows.append(copy.deepcopy(rows[-1]))
+        return rows
+
+    def test_only_approved_actions_and_no_mutation(self):
+        rows = self.fixture(); original = copy.deepcopy(rows)
+        fixed, log = apply_reviewed_corrections(rows)
+        self.assertEqual(rows, original)
+        self.assertEqual(len(fixed), len(rows) - 3)
+        self.assertEqual(sum(x['status'] == 'applied' for x in log), 6)
+        normalize(fixed)
+        self.assertTrue(all(r['Квартал'] == 'IV' for r in fixed if r['Місяць'] == 'Жовтень'))
+
+    def test_idempotence_and_partial_official_fix(self):
+        rows = self.fixture()
+        rows.remove(next(r for r in rows if r['Рік'] == 2024 and r['Категорія'] == 'Молдова'))
+        next(r for r in rows if r['Місяць'] == 'Жовтень' and r['Категорія'] == 'Польща')['Квартал'] = 'IV'
+        fixed, log = apply_reviewed_corrections(rows)
+        self.assertEqual(sum(x['status'] == 'applied' for x in log), 4)
+        again, log = apply_reviewed_corrections(fixed)
+        self.assertEqual(again, fixed)
+        self.assertTrue(all(x['status'] == 'already_corrected' for x in log))
+
+    def test_nonzero_or_nonidentical_copy_rejected(self):
+        for field, value in (('Значення', 0.001), ('Квартал', 'II')):
+            rows = self.fixture(); rows[4][field] = value
+            original = copy.deepcopy(rows)
+            with self.assertRaises(ValueError): apply_reviewed_corrections(rows)
+            self.assertEqual(rows, original)
+
+    def test_changed_total_by_one_thousandth_rejected(self):
+        rows = self.fixture()
+        next(r for r in rows if r['Рік'] == 2022 and r['Місяць'] == 'Вересень' and r['Категорія'] == 'усього')['Значення'] = 419.780
+        with self.assertRaises(ValueError): apply_reviewed_corrections(rows)
+
+    def test_october_changed_value_or_ambiguous_row_rejected(self):
+        rows = self.fixture()
+        row = next(r for r in rows if r['Місяць'] == 'Жовтень' and r['Категорія'] == 'Молдова')
+        with self.assertRaises(ValueError): apply_reviewed_corrections(rows + [copy.deepcopy(row)])
+        row['Значення'] = 34.736
+        with self.assertRaises(ValueError): apply_reviewed_corrections(rows)
+
+    def test_incomplete_august_block_rejected(self):
+        row = {'Рік': 2022, 'Місяць': 'Серпень', 'Квартал': 'ІІІ', 'Показник': 'Експорт',
+               'Категорія': 'Молдова', 'Одиниці виміру': 'тис. МВт×год', 'Значення': 106.275}
+        rows = [row, copy.deepcopy(row)]
+        with self.assertRaises(ValueError): apply_reviewed_corrections(rows)
+
+
+class August2022Copies(unittest.TestCase):
+    def fixture(self):
+        rows = []
+        for country, value in (('Молдова', 106.275), ('Польща', 152.845),
+                               ('Румунія', 92.611), ('Словаччина', 90.626), ('усього', 442.357)):
+            row = {'Рік': 2022, 'Місяць': 'Серпень', 'Квартал': 'ІІІ', 'Показник': 'Експорт',
+                   'Категорія': country, 'Одиниці виміру': 'тис. МВт×год', 'Значення': value}
+            rows.append(row)
+            if country in ('Молдова', 'Польща'): rows.append(copy.deepcopy(row))
+        return rows
+
+    def test_exact_cleanup_no_input_mutation_and_idempotence(self):
+        rows = self.fixture(); original = copy.deepcopy(rows)
+        fixed, log = apply_reviewed_corrections(rows)
+        self.assertEqual(rows, original)
+        self.assertEqual(len(normalize(fixed)), 5)
+        self.assertEqual(sum(x['status'] == 'applied' for x in log), 2)
+        again, log = apply_reviewed_corrections(fixed)
+        self.assertEqual(again, fixed)
+        self.assertTrue(all(x['status'] == 'already_corrected' for x in log))
+
+    def test_partial_source_fix(self):
+        rows = self.fixture(); del rows[1]
+        fixed, log = apply_reviewed_corrections(rows)
+        normalize(fixed)
+        self.assertEqual(sum(x['status'] == 'applied' for x in log), 1)
+
+    def test_changed_total_unit_country_or_copy_rejected(self):
+        for field, value, index in (('Значення', 442.358, -1),
+                                    ('Одиниці виміру', 'МВт×год', 0),
+                                    ('Категорія', 'Угорщина', 4),
+                                    ('Квартал', 'IV', 1),
+                                    ('Значення', 106.276, 1)):
+            rows = self.fixture(); rows[index][field] = value
+            original = copy.deepcopy(rows)
+            with self.assertRaises(ValueError): apply_reviewed_corrections(rows)
+            self.assertEqual(rows, original)
+
+    def test_third_copy_or_duplicate_other_country_rejected(self):
+        for index in (0, 4):
+            rows = self.fixture(); rows.append(copy.deepcopy(rows[index]))
+            with self.assertRaises(ValueError): apply_reviewed_corrections(rows)
+
+
 class Export2024Corrections(unittest.TestCase):
     def test_real_block_and_idempotence(self):
         rows = copy.deepcopy(EXPORT_2024_SOURCE)

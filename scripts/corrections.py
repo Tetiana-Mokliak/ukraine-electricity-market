@@ -133,7 +133,7 @@ EXPORT_2024_MOVES = (
 )
 
 
-def apply_reviewed_corrections(rows):
+def apply_month_shift_corrections(rows):
     prepared, journal = apply_existing_corrections(rows)
     months = ('Серпень', 'Вересень', 'Жовтень')
     block = [r for r in prepared if r['Рік'] == 2024
@@ -192,3 +192,93 @@ def apply_reviewed_corrections(rows):
                     'indicator': 'Експорт', 'month': 'Вересень',
                     'missing_categories': ['Молдова', 'Словаччина'], 'basis': basis})
     return prepared, journal
+
+
+def apply_reviewed_corrections(rows):
+    prepared, journal = apply_month_shift_corrections(rows)
+    block = [r for r in prepared if r['Рік'] == 2022 and r['Місяць'] == 'Серпень'
+             and r['Показник'].strip() == 'Експорт']
+    if block:
+        rule = 'export-2022-aug-reviewed-identical-copies-v1'
+        expected = {'Молдова': '106.275', 'Польща': '152.845',
+                    'Румунія': '92.611', 'Словаччина': '90.626'}
+        for country, amount in expected.items():
+            matching = [r for r in block if r['Категорія'].strip() == country]
+            allowed = (1, 2) if country in ('Молдова', 'Польща') else (1,)
+            if (len(matching) not in allowed
+                or any(number(r['Значення']) != Decimal(amount) for r in matching)
+                or any(r != matching[0] for r in matching)):
+                raise ValueError('Reviewed August 2022 records changed or ambiguous')
+            if country in ('Молдова', 'Польща'):
+                if len(matching) == 2:
+                    duplicate = matching[1]
+                    prepared = [r for r in prepared if r is not duplicate]
+                    block = [r for r in block if r is not duplicate]
+                journal.append(dict(rule_id=rule, year=2022, month='Серпень',
+                                    indicator='Експорт', category=country, value=amount,
+                                    action='remove_reviewed_identical_duplicate',
+                                    status='applied' if len(matching) == 2 else 'already_corrected',
+                                    basis='User-approved analytical assumption; exact total 442.357 and historical NERC-based country table; not an official correction'))
+        validate_reviewed_export_block(block, set(expected), '442.357')
+    # Only the three specifically approved zero copies; never general deduplication.
+    for year, month, countries, expected_total in (
+        (2022, 'Вересень', ('Угорщина',), '419.779'),
+        (2024, 'Липень', ('Молдова', 'Польща'), '0.000'),
+    ):
+        block = [r for r in prepared if r['Рік'] == year and r['Місяць'] == month
+                 and r['Показник'].strip() == 'Експорт']
+        if not block:
+            continue
+        rule = f'export-{year}-{month}-reviewed-zero-copies-v1'
+        for country in countries:
+            matching = [r for r in block if r['Категорія'].strip() == country]
+            if (len(matching) not in (1, 2)
+                or any(number(r['Значення']) != 0 for r in matching)
+                or any(r != matching[0] for r in matching)):
+                raise ValueError('Reviewed zero copies changed or ambiguous')
+            if len(matching) == 2:
+                duplicate = matching[1]
+                prepared = [r for r in prepared if r is not duplicate]
+                block = [r for r in block if r is not duplicate]
+            journal.append(dict(rule_id=rule, year=year, indicator='Експорт',
+                                month=month, category=country, value='0.000',
+                                action='remove_reviewed_identical_duplicate',
+                                status='applied' if len(matching) == 2 else 'already_corrected',
+                                basis='User-approved specific identical zero copy; totals unchanged; not an official source correction'))
+        validate_reviewed_export_block(block, COUNTRIES, expected_total)
+
+    block = [r for r in prepared if r['Рік'] == 2022 and r['Місяць'] == 'Жовтень'
+             and r['Показник'].strip() == 'Експорт']
+    if block:
+        for country, amount in (('Молдова', '34.735'), ('Польща', '53.010'), ('Румунія', '35.511')):
+            matching = [r for r in block if r['Категорія'].strip() == country]
+            if len(matching) != 1 or number(matching[0]['Значення']) != Decimal(amount):
+                raise ValueError('Reviewed October quarter record changed or ambiguous')
+            record = matching[0]
+            old_quarter = record['Квартал']
+            canonical = str(old_quarter).replace('I', 'І')
+            if canonical not in ('ІІІ', 'ІV'):
+                raise ValueError('Reviewed October quarter has unexpected value')
+            if canonical == 'ІІІ':
+                record['Квартал'] = 'IV'
+            journal.append(dict(rule_id='export-2022-oct-quarter-labels-v1',
+                                year=2022, month='Жовтень', indicator='Експорт',
+                                category=country, value=amount, action='correct_quarter',
+                                old_quarter=old_quarter, new_quarter=record['Квартал'],
+                                status='applied' if canonical == 'ІІІ' else 'already_corrected',
+                                basis='User-approved calendar label correction; month and value unchanged; October is Q4'))
+        validate_reviewed_export_block(block, COUNTRIES - {'Угорщина'}, '159.148')
+    return prepared, journal
+
+
+def validate_reviewed_export_block(block, expected_countries, expected_total):
+    if any(r['Одиниці виміру'].strip() != 'тис. МВт×год' for r in block):
+        raise ValueError('Reviewed export cleanup unit changed')
+    totals = [r for r in block if r['Категорія'].strip() == 'усього']
+    details = [r for r in block if r['Категорія'].strip() != 'усього']
+    if (len(details) != len(expected_countries)
+        or {r['Категорія'].strip() for r in details} != expected_countries):
+        raise ValueError('Reviewed export cleanup country coverage changed')
+    if (len(totals) != 1 or number(totals[0]['Значення']) != Decimal(expected_total)
+        or sum((number(r['Значення']) for r in details), Decimal(0)) != Decimal(expected_total)):
+        raise ValueError('Reviewed export cleanup does not reconcile exactly')

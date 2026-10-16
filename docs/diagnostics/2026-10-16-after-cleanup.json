@@ -1,0 +1,4784 @@
+{
+  "version": "2026-09-01",
+  "sha256": "232abfbe2b8a71e55076e5346cd580e2a2a76b4318a61e78ed0fc53d558d994b",
+  "raw_rows": 4572,
+  "corrected_rows": 4568,
+  "correction_statuses": {
+    "applied": 25,
+    "coverage_warning": 2
+  },
+  "corrections": [
+    {
+      "rule_id": "export-2025-jul-oct-month-shifts-v1",
+      "year": 2025,
+      "indicator": "Експорт",
+      "category": "Угорщина",
+      "value": "171.657",
+      "old_month": "Липень",
+      "new_month": "Серпень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all four monthly totals reconcile"
+    },
+    {
+      "rule_id": "export-2025-jul-oct-month-shifts-v1",
+      "year": 2025,
+      "indicator": "Експорт",
+      "category": "Молдова",
+      "value": "179.136",
+      "old_month": "Серпень",
+      "new_month": "Вересень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all four monthly totals reconcile"
+    },
+    {
+      "rule_id": "export-2025-jul-oct-month-shifts-v1",
+      "year": 2025,
+      "indicator": "Експорт",
+      "category": "Молдова",
+      "value": "31.135",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all four monthly totals reconcile"
+    },
+    {
+      "rule_id": "export-2025-jul-oct-month-shifts-v1",
+      "year": 2025,
+      "indicator": "Експорт",
+      "category": "Польща",
+      "value": "105.821",
+      "old_month": "Серпень",
+      "new_month": "Вересень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all four monthly totals reconcile"
+    },
+    {
+      "rule_id": "export-2025-jul-oct-month-shifts-v1",
+      "year": 2025,
+      "indicator": "Експорт",
+      "category": "Польща",
+      "value": "4.030",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all four monthly totals reconcile"
+    },
+    {
+      "rule_id": "export-2025-jul-oct-month-shifts-v1",
+      "year": 2025,
+      "indicator": "Експорт",
+      "category": "Румунія",
+      "value": "14.896",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all four monthly totals reconcile"
+    },
+    {
+      "rule_id": "import-2022-monthly-total-shifts-v1",
+      "year": 2022,
+      "indicator": "Імпорт",
+      "category": "усього",
+      "value": "0.187",
+      "old_month": "Серпень",
+      "new_month": "Вересень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all affected monthly totals reconcile exactly"
+    },
+    {
+      "rule_id": "import-2022-monthly-total-shifts-v1",
+      "year": 2022,
+      "indicator": "Імпорт",
+      "category": "усього",
+      "value": "1.492",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all affected monthly totals reconcile exactly"
+    },
+    {
+      "rule_id": "import-2023-monthly-total-shifts-v1",
+      "year": 2023,
+      "indicator": "Імпорт",
+      "category": "усього",
+      "value": "115.596",
+      "old_month": "Липень",
+      "new_month": "Серпень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all affected monthly totals reconcile exactly"
+    },
+    {
+      "rule_id": "import-2023-monthly-total-shifts-v1",
+      "year": 2023,
+      "indicator": "Імпорт",
+      "category": "усього",
+      "value": "23.824",
+      "old_month": "Серпень",
+      "new_month": "Вересень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all affected monthly totals reconcile exactly"
+    },
+    {
+      "rule_id": "import-2023-monthly-total-shifts-v1",
+      "year": 2023,
+      "indicator": "Імпорт",
+      "category": "усього",
+      "value": "17.207",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "Reviewed reconstruction; all affected monthly totals reconcile exactly"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "remove_reviewed_identical_duplicate",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Словаччина",
+      "old_month": "Серпень",
+      "value": "0.000",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Польща",
+      "value": "0.619",
+      "old_month": "Серпень",
+      "new_month": "Вересень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Румунія",
+      "value": "0.029",
+      "old_month": "Серпень",
+      "new_month": "Вересень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "ІІІ",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Молдова",
+      "value": "3.501",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Польща",
+      "value": "7.359",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Румунія",
+      "value": "15.556",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Словаччина",
+      "value": "14.398",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "applied",
+      "action": "move_month",
+      "year": 2024,
+      "indicator": "Експорт",
+      "category": "Угорщина",
+      "value": "20.267",
+      "old_month": "Вересень",
+      "new_month": "Жовтень",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "coverage_warning",
+      "year": 2024,
+      "indicator": "Експорт",
+      "month": "Серпень",
+      "missing_categories": [
+        "Польща"
+      ],
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2024-aug-oct-mathematical-assumption-v1",
+      "status": "coverage_warning",
+      "year": 2024,
+      "indicator": "Експорт",
+      "month": "Вересень",
+      "missing_categories": [
+        "Молдова",
+        "Словаччина"
+      ],
+      "basis": "Our mathematical assumption, not an official correction; exact sums in all affected months; missing countries are not imputed"
+    },
+    {
+      "rule_id": "export-2022-Вересень-reviewed-zero-copies-v1",
+      "year": 2022,
+      "indicator": "Експорт",
+      "month": "Вересень",
+      "category": "Угорщина",
+      "value": "0.000",
+      "action": "remove_reviewed_identical_duplicate",
+      "status": "applied",
+      "basis": "User-approved specific identical zero copy; totals unchanged; not an official source correction"
+    },
+    {
+      "rule_id": "export-2024-Липень-reviewed-zero-copies-v1",
+      "year": 2024,
+      "indicator": "Експорт",
+      "month": "Липень",
+      "category": "Молдова",
+      "value": "0.000",
+      "action": "remove_reviewed_identical_duplicate",
+      "status": "applied",
+      "basis": "User-approved specific identical zero copy; totals unchanged; not an official source correction"
+    },
+    {
+      "rule_id": "export-2024-Липень-reviewed-zero-copies-v1",
+      "year": 2024,
+      "indicator": "Експорт",
+      "month": "Липень",
+      "category": "Польща",
+      "value": "0.000",
+      "action": "remove_reviewed_identical_duplicate",
+      "status": "applied",
+      "basis": "User-approved specific identical zero copy; totals unchanged; not an official source correction"
+    },
+    {
+      "rule_id": "export-2022-oct-quarter-labels-v1",
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "category": "Молдова",
+      "value": "34.735",
+      "action": "correct_quarter",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "User-approved calendar label correction; month and value unchanged; October is Q4"
+    },
+    {
+      "rule_id": "export-2022-oct-quarter-labels-v1",
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "category": "Польща",
+      "value": "53.010",
+      "action": "correct_quarter",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "User-approved calendar label correction; month and value unchanged; October is Q4"
+    },
+    {
+      "rule_id": "export-2022-oct-quarter-labels-v1",
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "category": "Румунія",
+      "value": "35.511",
+      "action": "correct_quarter",
+      "old_quarter": "ІІІ",
+      "new_quarter": "IV",
+      "status": "applied",
+      "basis": "User-approved calendar label correction; month and value unchanged; October is Q4"
+    }
+  ],
+  "profile": [
+    {
+      "indicator": "Імпорт",
+      "rows": 482,
+      "units": [
+        "тис. МВт×год"
+      ],
+      "categories": [
+        "Білорусь",
+        "Молдова",
+        "Польща",
+        "Румунія",
+        "Словаччина",
+        "Угорщина",
+        "рф",
+        "усього"
+      ]
+    },
+    {
+      "indicator": "Індекс Герфіндаля-Гіршмана (ННІ)",
+      "rows": 54,
+      "units": [
+        "од."
+      ],
+      "categories": [
+        "виробників",
+        "загальний"
+      ]
+    },
+    {
+      "indicator": "Волатильність",
+      "rows": 162,
+      "units": [
+        "%"
+      ],
+      "categories": [
+        "ВДР",
+        "РДН"
+      ]
+    },
+    {
+      "indicator": "Експорт",
+      "rows": 489,
+      "units": [
+        "тис. МВт×год"
+      ],
+      "categories": [
+        "Білорусь",
+        "Молдова",
+        "Польща",
+        "Румунія",
+        "Словаччина",
+        "Угорщина",
+        "усього"
+      ]
+    },
+    {
+      "indicator": "Коефіцієнт перепродажу (churn rate)",
+      "rows": 81,
+      "units": [
+        "од."
+      ],
+      "categories": [
+        ""
+      ]
+    },
+    {
+      "indicator": "Кількість активних учасників",
+      "rows": 324,
+      "units": [
+        "од."
+      ],
+      "categories": [
+        "БР",
+        "ВДР",
+        "РДД",
+        "РДН"
+      ]
+    },
+    {
+      "indicator": "Механізм ринкової премії",
+      "rows": 52,
+      "units": [
+        "грн/кВт∙год",
+        "тис. грн"
+      ],
+      "categories": [
+        "Вартість послуги",
+        "Розрахункова ціна"
+      ]
+    },
+    {
+      "indicator": "Обсяг",
+      "rows": 405,
+      "units": [
+        "тис. МВт×год"
+      ],
+      "categories": [
+        "БР (завантаження)",
+        "БР (розвантаження)",
+        "ВДР",
+        "РДД",
+        "РДН"
+      ]
+    },
+    {
+      "indicator": "Обсяг придбаної електричної енергії за \"зеленим\" тарифом",
+      "rows": 162,
+      "units": [
+        "тис. МВт×год"
+      ],
+      "categories": [
+        "виробники/продавці",
+        "домогосподарства"
+      ]
+    },
+    {
+      "indicator": "Середньозважена ціна",
+      "rows": 405,
+      "units": [
+        "грн/МВт∙год"
+      ],
+      "categories": [
+        "БР (завантаження)",
+        "БР (розвантаження)",
+        "ВДР",
+        "РДД",
+        "РДН"
+      ]
+    },
+    {
+      "indicator": "Середньозважений \"зелений\" тариф",
+      "rows": 162,
+      "units": [
+        "грн/кВт∙год"
+      ],
+      "categories": [
+        "виробники/продавці",
+        "домогосподарства"
+      ]
+    },
+    {
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "rows": 405,
+      "units": [
+        "%"
+      ],
+      "categories": [
+        "вітрова",
+        "з біогазу",
+        "з біомаси",
+        "мала гідроенергія",
+        "сонячна"
+      ]
+    },
+    {
+      "indicator": "Структура виробництва",
+      "rows": 567,
+      "units": [
+        "%"
+      ],
+      "categories": [
+        "Інші",
+        "АЕС",
+        "ВДЕ",
+        "ГАЕС",
+        "ГЕС",
+        "ТЕС",
+        "ТЕЦ"
+      ]
+    },
+    {
+      "indicator": "Структура споживання",
+      "rows": 413,
+      "units": [
+        "%"
+      ],
+      "categories": [
+        "виробниками, приєд. до мереж ОСП",
+        "виробниками, приєд. до мереж ОСР",
+        "втрати ОСП",
+        "втрати ОСР",
+        "споживачами (учасниками ринку)",
+        "споживачі постачальників"
+      ]
+    },
+    {
+      "indicator": "Частка ВДЕ у загальній структурі виробленої електричної енергії",
+      "rows": 405,
+      "units": [
+        "%"
+      ],
+      "categories": [
+        "вітрова",
+        "з біогазу",
+        "з біомаси",
+        "мала гідроенергія",
+        "сонячна"
+      ]
+    }
+  ],
+  "null_counts": {
+    "Рік": 0,
+    "Квартал": 0,
+    "Місяць": 0,
+    "Показник": 0,
+    "Категорія": 81,
+    "Одиниці виміру": 0,
+    "Значення": 0
+  },
+  "negative_rows": [],
+  "invalid_share_rows": [],
+  "volatility_over_100": [
+    {
+      "Рік": 2024,
+      "Квартал": "І",
+      "Місяць": "Січень",
+      "Показник": "Волатильність",
+      "Категорія": "ВДР",
+      "Одиниці виміру": "%",
+      "Значення": 115.54566417088192
+    },
+    {
+      "Рік": 2024,
+      "Квартал": "І",
+      "Місяць": "Січень",
+      "Показник": "Волатильність",
+      "Категорія": "РДН",
+      "Одиниці виміру": "%",
+      "Значення": 114.23611689182651
+    }
+  ],
+  "duplicate_keys": [
+    {
+      "key": [
+        2022,
+        "Серпень",
+        "Експорт",
+        "Молдова"
+      ],
+      "rows": [
+        {
+          "Рік": 2022,
+          "Квартал": "ІІІ",
+          "Місяць": "Серпень",
+          "Показник": "Експорт",
+          "Категорія": "Молдова",
+          "Одиниці виміру": "тис. МВт×год",
+          "Значення": 106.275
+        },
+        {
+          "Рік": 2022,
+          "Квартал": "ІІІ",
+          "Місяць": "Серпень",
+          "Показник": "Експорт",
+          "Категорія": "Молдова",
+          "Одиниці виміру": "тис. МВт×год",
+          "Значення": 106.275
+        }
+      ],
+      "identical": true
+    },
+    {
+      "key": [
+        2022,
+        "Серпень",
+        "Експорт",
+        "Польща"
+      ],
+      "rows": [
+        {
+          "Рік": 2022,
+          "Квартал": "ІІІ",
+          "Місяць": "Серпень",
+          "Показник": "Експорт",
+          "Категорія": "Польща",
+          "Одиниці виміру": "тис. МВт×год",
+          "Значення": 152.845
+        },
+        {
+          "Рік": 2022,
+          "Квартал": "ІІІ",
+          "Місяць": "Серпень",
+          "Показник": "Експорт",
+          "Категорія": "Польща",
+          "Одиниці виміру": "тис. МВт×год",
+          "Значення": 152.845
+        }
+      ],
+      "identical": true
+    }
+  ],
+  "invalid_rows": [],
+  "trade_checks": [
+    {
+      "year": 2019,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "499.678",
+      "detail_sum": "499.678",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "499.678"
+    },
+    {
+      "year": 2019,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "273.999",
+      "detail_sum": "273.999",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "273.999"
+    },
+    {
+      "year": 2019,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "492.701",
+      "detail_sum": "492.701",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "492.701"
+    },
+    {
+      "year": 2019,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "311.544",
+      "detail_sum": "311.544",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "311.544"
+    },
+    {
+      "year": 2019,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "477.562",
+      "detail_sum": "477.562",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "477.562"
+    },
+    {
+      "year": 2019,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "351.133",
+      "detail_sum": "351.133",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "351.133"
+    },
+    {
+      "year": 2019,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "616.955",
+      "detail_sum": "616.955",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "616.955"
+    },
+    {
+      "year": 2019,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "601.317",
+      "detail_sum": "601.317",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "601.317"
+    },
+    {
+      "year": 2019,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "634.316",
+      "detail_sum": "634.316",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "634.316"
+    },
+    {
+      "year": 2019,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "661.130",
+      "detail_sum": "661.130",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "661.130"
+    },
+    {
+      "year": 2019,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "714.401",
+      "detail_sum": "714.401",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "714.401"
+    },
+    {
+      "year": 2019,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "499.872",
+      "detail_sum": "499.872",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "499.872"
+    },
+    {
+      "year": 2020,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "696.554",
+      "detail_sum": "696.554",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "696.554"
+    },
+    {
+      "year": 2020,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "560.072",
+      "detail_sum": "560.072",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "560.072"
+    },
+    {
+      "year": 2020,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "737.532",
+      "detail_sum": "737.532",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "737.532"
+    },
+    {
+      "year": 2020,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "551.093",
+      "detail_sum": "551.093",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "551.093"
+    },
+    {
+      "year": 2020,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "770.906",
+      "detail_sum": "770.906",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "770.906"
+    },
+    {
+      "year": 2020,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "442.670",
+      "detail_sum": "442.670",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "442.670"
+    },
+    {
+      "year": 2020,
+      "month": "Квітень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "236.623",
+      "detail_sum": "236.623",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "236.623"
+    },
+    {
+      "year": 2020,
+      "month": "Квітень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "150.801",
+      "detail_sum": "150.801",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "150.801"
+    },
+    {
+      "year": 2020,
+      "month": "Травень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "124.825",
+      "detail_sum": "124.825",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "124.825"
+    },
+    {
+      "year": 2020,
+      "month": "Травень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "33.166",
+      "detail_sum": "33.166",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "33.166"
+    },
+    {
+      "year": 2020,
+      "month": "Червень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "107.594",
+      "detail_sum": "107.594",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "107.594"
+    },
+    {
+      "year": 2020,
+      "month": "Червень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "18.893",
+      "detail_sum": "18.893",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "18.893"
+    },
+    {
+      "year": 2020,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "134.073",
+      "detail_sum": "134.073",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "134.073"
+    },
+    {
+      "year": 2020,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "21.761",
+      "detail_sum": "21.761",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "21.761"
+    },
+    {
+      "year": 2020,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "172.965",
+      "detail_sum": "172.965",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "172.965"
+    },
+    {
+      "year": 2020,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "38.483",
+      "detail_sum": "38.483",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "38.483"
+    },
+    {
+      "year": 2020,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "471.213",
+      "detail_sum": "471.213",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "471.213"
+    },
+    {
+      "year": 2020,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "53.842",
+      "detail_sum": "53.842",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "53.842"
+    },
+    {
+      "year": 2020,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "496.191",
+      "detail_sum": "496.191",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "496.191"
+    },
+    {
+      "year": 2020,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "128.707",
+      "detail_sum": "128.707",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "128.707"
+    },
+    {
+      "year": 2020,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "481.829",
+      "detail_sum": "481.829",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "481.829"
+    },
+    {
+      "year": 2020,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "156.735",
+      "detail_sum": "156.735",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "156.735"
+    },
+    {
+      "year": 2020,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "329.869",
+      "detail_sum": "329.869",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "329.869"
+    },
+    {
+      "year": 2020,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "128.690",
+      "detail_sum": "128.690",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "128.690"
+    },
+    {
+      "year": 2021,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "52.101",
+      "detail_sum": "52.101",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "52.101"
+    },
+    {
+      "year": 2021,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "267.905",
+      "detail_sum": "267.905",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "267.905"
+    },
+    {
+      "year": 2021,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "6.663",
+      "detail_sum": "6.663",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "6.663"
+    },
+    {
+      "year": 2021,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "509.861",
+      "detail_sum": "509.861",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "509.861"
+    },
+    {
+      "year": 2021,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "501.100",
+      "detail_sum": "501.100",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "501.100"
+    },
+    {
+      "year": 2021,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "129.686",
+      "detail_sum": "129.686",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "129.686"
+    },
+    {
+      "year": 2021,
+      "month": "Квітень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "379.448",
+      "detail_sum": "379.448",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "379.448"
+    },
+    {
+      "year": 2021,
+      "month": "Квітень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "40.121",
+      "detail_sum": "40.121",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "40.121"
+    },
+    {
+      "year": 2021,
+      "month": "Травень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "458.309",
+      "detail_sum": "458.309",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "458.309"
+    },
+    {
+      "year": 2021,
+      "month": "Травень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "35.038",
+      "detail_sum": "35.038",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "35.038"
+    },
+    {
+      "year": 2021,
+      "month": "Червень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "362.295",
+      "detail_sum": "362.295",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "362.295"
+    },
+    {
+      "year": 2021,
+      "month": "Червень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "4.523",
+      "detail_sum": "4.523",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "4.523"
+    },
+    {
+      "year": 2021,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "369.773",
+      "detail_sum": "369.773",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "369.773"
+    },
+    {
+      "year": 2021,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "1.235",
+      "detail_sum": "1.235",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "1.235"
+    },
+    {
+      "year": 2021,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "341.402",
+      "detail_sum": "341.402",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "341.402"
+    },
+    {
+      "year": 2021,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "27.061",
+      "detail_sum": "27.061",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "27.061"
+    },
+    {
+      "year": 2021,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "301.196",
+      "detail_sum": "301.196",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "301.196"
+    },
+    {
+      "year": 2021,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.028",
+      "detail_sum": "0.028",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.028"
+    },
+    {
+      "year": 2021,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "245.884",
+      "detail_sum": "245.884",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "245.884"
+    },
+    {
+      "year": 2021,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2021,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "131.145",
+      "detail_sum": "131.145",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "131.145"
+    },
+    {
+      "year": 2021,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "241.551",
+      "detail_sum": "241.551",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "241.551"
+    },
+    {
+      "year": 2021,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "338.497",
+      "detail_sum": "338.497",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "338.497"
+    },
+    {
+      "year": 2021,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "436.815",
+      "detail_sum": "436.815",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "436.815"
+    },
+    {
+      "year": 2022,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "313.943",
+      "detail_sum": "313.943",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "313.943"
+    },
+    {
+      "year": 2022,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "511.519",
+      "detail_sum": "511.519",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "511.519"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "331.607",
+      "detail_sum": "331.607",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "331.607"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "303.998",
+      "detail_sum": "303.998",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "303.998"
+    },
+    {
+      "year": 2022,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "9.610",
+      "detail_sum": "9.610",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "9.610"
+    },
+    {
+      "year": 2022,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Квітень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "121.555",
+      "detail_sum": "121.555",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "121.555"
+    },
+    {
+      "year": 2022,
+      "month": "Квітень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Травень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "196.489",
+      "detail_sum": "196.489",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "196.489"
+    },
+    {
+      "year": 2022,
+      "month": "Травень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Червень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "238.147",
+      "detail_sum": "238.147",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "238.147"
+    },
+    {
+      "year": 2022,
+      "month": "Червень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "339.270",
+      "detail_sum": "339.270",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "339.270"
+    },
+    {
+      "year": 2022,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "442.357",
+      "detail_sum": "701.477",
+      "exact_match": false,
+      "hypothetical_sum_identical_rows_once": "442.357"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.187",
+      "detail_sum": "0.187",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.187"
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "419.779",
+      "detail_sum": "419.779",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "419.779"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "1.492",
+      "detail_sum": "1.492",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "1.492"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "159.148",
+      "detail_sum": "159.148",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "159.148"
+    },
+    {
+      "year": 2022,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2022,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "0.129",
+      "detail_sum": "0.129",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.129"
+    },
+    {
+      "year": 2022,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "3.087",
+      "detail_sum": "3.087",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "3.087"
+    },
+    {
+      "year": 2022,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "62.453",
+      "detail_sum": "62.453",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "62.453"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "141.805",
+      "detail_sum": "141.805",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "141.805"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "7.216",
+      "detail_sum": "7.216",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "7.216"
+    },
+    {
+      "year": 2023,
+      "month": "Квітень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "96.022",
+      "detail_sum": "96.022",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "96.022"
+    },
+    {
+      "year": 2023,
+      "month": "Квітень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "4.202",
+      "detail_sum": "4.202",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "4.202"
+    },
+    {
+      "year": 2023,
+      "month": "Травень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "41.434",
+      "detail_sum": "41.434",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "41.434"
+    },
+    {
+      "year": 2023,
+      "month": "Травень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "23.604",
+      "detail_sum": "23.604",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "23.604"
+    },
+    {
+      "year": 2023,
+      "month": "Червень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "5.975",
+      "detail_sum": "5.975",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "5.975"
+    },
+    {
+      "year": 2023,
+      "month": "Червень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "43.704",
+      "detail_sum": "43.704",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "43.704"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.804",
+      "detail_sum": "0.804",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.804"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "73.298",
+      "detail_sum": "73.298",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "73.298"
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "115.596",
+      "detail_sum": "115.596",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "115.596"
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.205",
+      "detail_sum": "0.205",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.205"
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "23.824",
+      "detail_sum": "23.824",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "23.824"
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "110.720",
+      "detail_sum": "110.720",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "110.720"
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "17.207",
+      "detail_sum": "17.207",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "17.207"
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "69.839",
+      "detail_sum": "69.839",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "69.839"
+    },
+    {
+      "year": 2023,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "40.929",
+      "detail_sum": "40.929",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "40.929"
+    },
+    {
+      "year": 2023,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "60.674",
+      "detail_sum": "60.674",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "60.674"
+    },
+    {
+      "year": 2023,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.210",
+      "detail_sum": "0.210",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.210"
+    },
+    {
+      "year": 2023,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "232.950",
+      "detail_sum": "232.950",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "232.950"
+    },
+    {
+      "year": 2024,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "5.223",
+      "detail_sum": "5.223",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "5.223"
+    },
+    {
+      "year": 2024,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "122.831",
+      "detail_sum": "122.831",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "122.831"
+    },
+    {
+      "year": 2024,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "63.114",
+      "detail_sum": "63.114",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "63.114"
+    },
+    {
+      "year": 2024,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "84.094",
+      "detail_sum": "84.094",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "84.094"
+    },
+    {
+      "year": 2024,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "154.115",
+      "detail_sum": "154.115",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "154.115"
+    },
+    {
+      "year": 2024,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "168.280",
+      "detail_sum": "168.280",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "168.280"
+    },
+    {
+      "year": 2024,
+      "month": "Квітень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "12.013",
+      "detail_sum": "12.013",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "12.013"
+    },
+    {
+      "year": 2024,
+      "month": "Квітень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "225.672",
+      "detail_sum": "225.672",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "225.672"
+    },
+    {
+      "year": 2024,
+      "month": "Травень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "3.878",
+      "detail_sum": "3.878",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "3.878"
+    },
+    {
+      "year": 2024,
+      "month": "Травень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "448.163",
+      "detail_sum": "448.163",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "448.163"
+    },
+    {
+      "year": 2024,
+      "month": "Червень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2024,
+      "month": "Червень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "858.378",
+      "detail_sum": "858.378",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "858.378"
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "842.842",
+      "detail_sum": "842.842",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "842.842"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.691",
+      "detail_sum": "0.691",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.691"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "472.832",
+      "detail_sum": "472.832",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "472.832"
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "61.081",
+      "detail_sum": "61.081",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "61.081"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "437.855",
+      "detail_sum": "437.855",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "437.855"
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "181.794",
+      "detail_sum": "181.794",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "181.794"
+    },
+    {
+      "year": 2024,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "59.948",
+      "detail_sum": "59.948",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "59.948"
+    },
+    {
+      "year": 2024,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "164.680",
+      "detail_sum": "164.680",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "164.680"
+    },
+    {
+      "year": 2024,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "6.799",
+      "detail_sum": "6.799",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "6.799"
+    },
+    {
+      "year": 2024,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "433.295",
+      "detail_sum": "433.295",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "433.295"
+    },
+    {
+      "year": 2025,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "84.690",
+      "detail_sum": "84.690",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "84.690"
+    },
+    {
+      "year": 2025,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "183.127",
+      "detail_sum": "183.127",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "183.127"
+    },
+    {
+      "year": 2025,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "33.110",
+      "detail_sum": "33.110",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "33.110"
+    },
+    {
+      "year": 2025,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "244.218",
+      "detail_sum": "244.218",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "244.218"
+    },
+    {
+      "year": 2025,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "77.989",
+      "detail_sum": "77.989",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "77.989"
+    },
+    {
+      "year": 2025,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "273.005",
+      "detail_sum": "273.005",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "273.005"
+    },
+    {
+      "year": 2025,
+      "month": "Квітень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "154.859",
+      "detail_sum": "154.859",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "154.859"
+    },
+    {
+      "year": 2025,
+      "month": "Квітень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "187.901",
+      "detail_sum": "187.901",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "187.901"
+    },
+    {
+      "year": 2025,
+      "month": "Травень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "93.875",
+      "detail_sum": "93.875",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "93.875"
+    },
+    {
+      "year": 2025,
+      "month": "Травень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "195.358",
+      "detail_sum": "195.358",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "195.358"
+    },
+    {
+      "year": 2025,
+      "month": "Червень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "242.874",
+      "detail_sum": "242.874",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "242.874"
+    },
+    {
+      "year": 2025,
+      "month": "Червень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "208.809",
+      "detail_sum": "208.809",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "208.809"
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "286.058",
+      "detail_sum": "286.058",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "286.058"
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "453.116",
+      "detail_sum": "453.116",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "453.116"
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "261.486",
+      "detail_sum": "261.486",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "261.486"
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "643.593",
+      "detail_sum": "643.593",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "643.593"
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "267.187",
+      "detail_sum": "267.187",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "267.187"
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "91.269",
+      "detail_sum": "91.269",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "91.269"
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "148.182",
+      "detail_sum": "148.182",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "148.182"
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "360.340",
+      "detail_sum": "360.340",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "360.340"
+    },
+    {
+      "year": 2025,
+      "month": "Листопад",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "5.507",
+      "detail_sum": "5.507",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "5.507"
+    },
+    {
+      "year": 2025,
+      "month": "Листопад",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "414.948",
+      "detail_sum": "414.948",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "414.948"
+    },
+    {
+      "year": 2025,
+      "month": "Грудень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2025,
+      "month": "Грудень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "639.758",
+      "detail_sum": "639.758",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "639.758"
+    },
+    {
+      "year": 2026,
+      "month": "Січень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2026,
+      "month": "Січень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "895.828",
+      "detail_sum": "895.828",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "895.828"
+    },
+    {
+      "year": 2026,
+      "month": "Лютий",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "0.000",
+      "detail_sum": "0.000",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "0.000"
+    },
+    {
+      "year": 2026,
+      "month": "Лютий",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "1266.183",
+      "detail_sum": "1266.183",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "1266.183"
+    },
+    {
+      "year": 2026,
+      "month": "Березень",
+      "indicator": "Експорт",
+      "total_count": 1,
+      "total": "35.958",
+      "detail_sum": "35.958",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "35.958"
+    },
+    {
+      "year": 2026,
+      "month": "Березень",
+      "indicator": "Імпорт",
+      "total_count": 1,
+      "total": "943.285",
+      "detail_sum": "943.285",
+      "exact_match": true,
+      "hypothetical_sum_identical_rows_once": "943.285"
+    }
+  ],
+  "structure_checks": [
+    {
+      "year": 2019,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999863",
+      "residual_from_100": "-1.37E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999651",
+      "residual_from_100": "-3.49E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000096",
+      "residual_from_100": "9.6E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.00000000000002237",
+      "residual_from_100": "2.237E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999748",
+      "residual_from_100": "-2.52E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000146",
+      "residual_from_100": "1.46E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999936",
+      "residual_from_100": "-6.4E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999998938",
+      "residual_from_100": "-1.062E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999882",
+      "residual_from_100": "-1.18E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000030",
+      "residual_from_100": "3.0E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999723",
+      "residual_from_100": "-2.77E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000017",
+      "residual_from_100": "1.7E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000065",
+      "residual_from_100": "6.5E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001314",
+      "residual_from_100": "1.314E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000200",
+      "residual_from_100": "2.00E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999897",
+      "residual_from_100": "-1.03E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999998705",
+      "residual_from_100": "-1.295E-14"
+    },
+    {
+      "year": 2019,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000025",
+      "residual_from_100": "2.5E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000007",
+      "residual_from_100": "7E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000007356",
+      "residual_from_100": "7.356E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999973",
+      "residual_from_100": "-2.7E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000018",
+      "residual_from_100": "1.8E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999990346",
+      "residual_from_100": "-9.654E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999996",
+      "residual_from_100": "-4E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000013",
+      "residual_from_100": "1.3E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999998458",
+      "residual_from_100": "-1.542E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "100.00",
+      "residual_from_100": "0.00"
+    },
+    {
+      "year": 2020,
+      "month": "Квітень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999970",
+      "residual_from_100": "-3.0E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Квітень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001365",
+      "residual_from_100": "1.365E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Квітень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999993",
+      "residual_from_100": "-7E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Травень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999956",
+      "residual_from_100": "-4.4E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Травень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000002414",
+      "residual_from_100": "2.414E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Травень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999917",
+      "residual_from_100": "-8.3E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Червень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000045",
+      "residual_from_100": "4.5E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Червень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999996965",
+      "residual_from_100": "-3.035E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Червень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000039",
+      "residual_from_100": "3.9E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000049",
+      "residual_from_100": "4.9E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000305",
+      "residual_from_100": "3.05E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000004",
+      "residual_from_100": "4E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000169",
+      "residual_from_100": "1.69E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999051",
+      "residual_from_100": "-9.49E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999900",
+      "residual_from_100": "-1.00E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999919",
+      "residual_from_100": "-8.1E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999997855",
+      "residual_from_100": "-2.145E-14"
+    },
+    {
+      "year": 2020,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999998",
+      "residual_from_100": "-2E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999993",
+      "residual_from_100": "-7E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000688",
+      "residual_from_100": "6.88E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000017",
+      "residual_from_100": "1.7E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000005",
+      "residual_from_100": "5E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999999596",
+      "residual_from_100": "-4.04E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999922",
+      "residual_from_100": "-7.8E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999999",
+      "residual_from_100": "-1E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999915",
+      "residual_from_100": "-8.5E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000028",
+      "residual_from_100": "2.8E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000065",
+      "residual_from_100": "6.5E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000015546",
+      "residual_from_100": "1.5546E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999989",
+      "residual_from_100": "-1.1E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999994",
+      "residual_from_100": "-6E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999994973",
+      "residual_from_100": "-5.027E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000012",
+      "residual_from_100": "1.2E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000148",
+      "residual_from_100": "1.48E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000012077",
+      "residual_from_100": "1.2077E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000123",
+      "residual_from_100": "1.23E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Квітень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000072",
+      "residual_from_100": "7.2E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Квітень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001704",
+      "residual_from_100": "1.704E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Квітень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000057",
+      "residual_from_100": "5.7E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Травень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999815",
+      "residual_from_100": "-1.85E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Травень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999187",
+      "residual_from_100": "-8.13E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Травень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999847",
+      "residual_from_100": "-1.53E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Червень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000155",
+      "residual_from_100": "1.55E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Червень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999996924",
+      "residual_from_100": "-3.076E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Червень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999944",
+      "residual_from_100": "-5.6E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000327",
+      "residual_from_100": "3.27E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999990096",
+      "residual_from_100": "-9.904E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999997",
+      "residual_from_100": "-3E-16"
+    },
+    {
+      "year": 2021,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000008",
+      "residual_from_100": "8E-16"
+    },
+    {
+      "year": 2021,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001857",
+      "residual_from_100": "1.857E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000123",
+      "residual_from_100": "1.23E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000096",
+      "residual_from_100": "9.6E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999765",
+      "residual_from_100": "-2.35E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999884",
+      "residual_from_100": "-1.16E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999775",
+      "residual_from_100": "-2.25E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999993873",
+      "residual_from_100": "-6.127E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999998",
+      "residual_from_100": "-2E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000086",
+      "residual_from_100": "8.6E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000010578",
+      "residual_from_100": "1.0578E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000034",
+      "residual_from_100": "3.4E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999989",
+      "residual_from_100": "-1.1E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999986315",
+      "residual_from_100": "-1.3685E-14"
+    },
+    {
+      "year": 2021,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000114",
+      "residual_from_100": "1.14E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999805",
+      "residual_from_100": "-1.95E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999991098",
+      "residual_from_100": "-8.902E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999994",
+      "residual_from_100": "-6E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000003",
+      "residual_from_100": "3E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000007878",
+      "residual_from_100": "7.878E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000040",
+      "residual_from_100": "4.0E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999997",
+      "residual_from_100": "-3E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999997777",
+      "residual_from_100": "-2.223E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "99.99999999999999152",
+      "residual_from_100": "-8.48E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Квітень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000053",
+      "residual_from_100": "5.3E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Квітень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999984107",
+      "residual_from_100": "-1.5893E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Квітень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999988",
+      "residual_from_100": "-1.2E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Травень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999991",
+      "residual_from_100": "-9E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Травень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001877",
+      "residual_from_100": "1.877E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Травень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999989",
+      "residual_from_100": "-1.1E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Червень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000092",
+      "residual_from_100": "9.2E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Червень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000009847",
+      "residual_from_100": "9.847E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Червень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999996",
+      "residual_from_100": "-4E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999997",
+      "residual_from_100": "-3E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000002179",
+      "residual_from_100": "2.179E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999894",
+      "residual_from_100": "-1.06E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000012",
+      "residual_from_100": "1.2E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000010567",
+      "residual_from_100": "1.0567E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000002",
+      "residual_from_100": "2E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999979",
+      "residual_from_100": "-2.1E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999992754",
+      "residual_from_100": "-7.246E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999867",
+      "residual_from_100": "-1.33E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000003",
+      "residual_from_100": "3E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000012466",
+      "residual_from_100": "1.2466E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999988",
+      "residual_from_100": "-1.2E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000016",
+      "residual_from_100": "1.6E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000008258",
+      "residual_from_100": "8.258E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000217",
+      "residual_from_100": "2.17E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999999",
+      "residual_from_100": "-1E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000018518",
+      "residual_from_100": "1.8518E-14"
+    },
+    {
+      "year": 2022,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000185",
+      "residual_from_100": "1.85E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000006",
+      "residual_from_100": "6E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001561",
+      "residual_from_100": "1.561E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999870",
+      "residual_from_100": "-1.30E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000000",
+      "residual_from_100": "0E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000022163",
+      "residual_from_100": "2.2163E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999903",
+      "residual_from_100": "-9.7E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999925",
+      "residual_from_100": "-7.5E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999988046",
+      "residual_from_100": "-1.1954E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000004",
+      "residual_from_100": "4E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Квітень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999992",
+      "residual_from_100": "-8E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Квітень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000424",
+      "residual_from_100": "4.24E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Квітень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999990",
+      "residual_from_100": "-1.0E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Травень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999997",
+      "residual_from_100": "-3E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Травень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001583",
+      "residual_from_100": "1.583E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Травень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000086",
+      "residual_from_100": "8.6E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Червень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999938",
+      "residual_from_100": "-6.2E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Червень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000001006",
+      "residual_from_100": "1.006E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Червень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999984",
+      "residual_from_100": "-1.6E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999972",
+      "residual_from_100": "-2.8E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "100.0000000000000090763",
+      "residual_from_100": "9.0763E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000130",
+      "residual_from_100": "1.30E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000059",
+      "residual_from_100": "5.9E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999946837",
+      "residual_from_100": "-5.3163E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000183",
+      "residual_from_100": "1.83E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000042",
+      "residual_from_100": "4.2E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999716236",
+      "residual_from_100": "-2.83764E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999957",
+      "residual_from_100": "-4.3E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000067",
+      "residual_from_100": "6.7E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000019924",
+      "residual_from_100": "1.9924E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999648",
+      "residual_from_100": "-3.52E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999993",
+      "residual_from_100": "-7E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000725071",
+      "residual_from_100": "7.25071E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999822",
+      "residual_from_100": "-1.78E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000010",
+      "residual_from_100": "1.0E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001018039",
+      "residual_from_100": "1.018039E-14"
+    },
+    {
+      "year": 2023,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999987",
+      "residual_from_100": "-1.3E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999997",
+      "residual_from_100": "-3E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000009068046",
+      "residual_from_100": "9.068046E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000045",
+      "residual_from_100": "4.5E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000000",
+      "residual_from_100": "0E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "100.0000000000000349174",
+      "residual_from_100": "3.49174E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999982",
+      "residual_from_100": "-1.8E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999982",
+      "residual_from_100": "-1.8E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "100.0000000000000067821",
+      "residual_from_100": "6.7821E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999734",
+      "residual_from_100": "-2.66E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Квітень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000055",
+      "residual_from_100": "5.5E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Квітень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000012586",
+      "residual_from_100": "1.2586E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Квітень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000078",
+      "residual_from_100": "7.8E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Травень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999812",
+      "residual_from_100": "-1.88E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Травень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999990766",
+      "residual_from_100": "-9.234E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Травень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999982",
+      "residual_from_100": "-1.8E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Червень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999997",
+      "residual_from_100": "-3E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Червень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000002947",
+      "residual_from_100": "2.947E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Червень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000095",
+      "residual_from_100": "9.5E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999936",
+      "residual_from_100": "-6.4E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999988663",
+      "residual_from_100": "-1.1337E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000162",
+      "residual_from_100": "1.62E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000095",
+      "residual_from_100": "9.5E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999982546",
+      "residual_from_100": "-1.7454E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000005",
+      "residual_from_100": "5E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000265",
+      "residual_from_100": "2.65E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999485",
+      "residual_from_100": "-5.15E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999877",
+      "residual_from_100": "-1.23E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999827",
+      "residual_from_100": "-1.73E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000019",
+      "residual_from_100": "1.9E-16"
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999938",
+      "residual_from_100": "-6.2E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000212",
+      "residual_from_100": "2.12E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "99.999999999999970364",
+      "residual_from_100": "-2.9636E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999962",
+      "residual_from_100": "-3.8E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000008",
+      "residual_from_100": "8E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001031",
+      "residual_from_100": "1.031E-14"
+    },
+    {
+      "year": 2024,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000126",
+      "residual_from_100": "1.26E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000011",
+      "residual_from_100": "1.1E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "99.9999999999999976",
+      "residual_from_100": "-2.4E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999875",
+      "residual_from_100": "-1.25E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999968",
+      "residual_from_100": "-3.2E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000353",
+      "residual_from_100": "3.53E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999916",
+      "residual_from_100": "-8.4E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999778",
+      "residual_from_100": "-2.22E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000496",
+      "residual_from_100": "4.96E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000055",
+      "residual_from_100": "5.5E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Квітень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000049",
+      "residual_from_100": "4.9E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Квітень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000295",
+      "residual_from_100": "2.95E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Квітень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000089",
+      "residual_from_100": "8.9E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Травень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999886",
+      "residual_from_100": "-1.14E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Травень",
+      "indicator": "Структура виробництва",
+      "sum": "100.000000000000018246",
+      "residual_from_100": "1.8246E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Травень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999930",
+      "residual_from_100": "-7.0E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Червень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000041",
+      "residual_from_100": "4.1E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Червень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999296",
+      "residual_from_100": "-7.04E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Червень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999985",
+      "residual_from_100": "-1.5E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999933",
+      "residual_from_100": "-6.7E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000001277824434",
+      "residual_from_100": "1.277824434E-8"
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000020",
+      "residual_from_100": "2.0E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999974",
+      "residual_from_100": "-2.6E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999064",
+      "residual_from_100": "-9.36E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "indicator": "Структура споживання",
+      "sum": "99.999999999999989",
+      "residual_from_100": "-1.1E-14"
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000017",
+      "residual_from_100": "1.7E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000000281",
+      "residual_from_100": "2.81E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000091",
+      "residual_from_100": "9.1E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999998",
+      "residual_from_100": "-2E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999362",
+      "residual_from_100": "-6.38E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "indicator": "Структура споживання",
+      "sum": "100.0000000000000088",
+      "residual_from_100": "8.8E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Листопад",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.000000000000005",
+      "residual_from_100": "5E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Листопад",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999177",
+      "residual_from_100": "-8.23E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Листопад",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000002",
+      "residual_from_100": "2E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Грудень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999993",
+      "residual_from_100": "-7E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Грудень",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999242",
+      "residual_from_100": "-7.58E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Грудень",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000017",
+      "residual_from_100": "1.7E-14"
+    },
+    {
+      "year": 2026,
+      "month": "Січень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.9999999999999973",
+      "residual_from_100": "-2.7E-15"
+    },
+    {
+      "year": 2026,
+      "month": "Січень",
+      "indicator": "Структура виробництва",
+      "sum": "100.00000000000001737",
+      "residual_from_100": "1.737E-14"
+    },
+    {
+      "year": 2026,
+      "month": "Січень",
+      "indicator": "Структура споживання",
+      "sum": "99.9999999999999812",
+      "residual_from_100": "-1.88E-14"
+    },
+    {
+      "year": 2026,
+      "month": "Лютий",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "99.999999999999993",
+      "residual_from_100": "-7E-15"
+    },
+    {
+      "year": 2026,
+      "month": "Лютий",
+      "indicator": "Структура виробництва",
+      "sum": "99.99999999999999816",
+      "residual_from_100": "-1.84E-15"
+    },
+    {
+      "year": 2026,
+      "month": "Лютий",
+      "indicator": "Структура споживання",
+      "sum": "100.000000011594559",
+      "residual_from_100": "1.1594559E-8"
+    },
+    {
+      "year": 2026,
+      "month": "Березень",
+      "indicator": "Структура ВДЕ (по відношення до обсягу виробленої електричної енергії з ВДЕ)",
+      "sum": "100.0000000000000062",
+      "residual_from_100": "6.2E-15"
+    },
+    {
+      "year": 2026,
+      "month": "Березень",
+      "indicator": "Структура виробництва",
+      "sum": "99.9999999999999995",
+      "residual_from_100": "-5E-16"
+    },
+    {
+      "year": 2026,
+      "month": "Березень",
+      "indicator": "Структура споживання",
+      "sum": "100.000000000000024",
+      "residual_from_100": "2.4E-14"
+    }
+  ],
+  "vde_crosschecks": [
+    {
+      "year": 2019,
+      "month": "Липень",
+      "components": 5,
+      "residual": "-2.6E-16"
+    },
+    {
+      "year": 2019,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "1.273E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "-9.7E-16"
+    },
+    {
+      "year": 2019,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "1.767523261E-8"
+    },
+    {
+      "year": 2019,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "1.406E-15"
+    },
+    {
+      "year": 2019,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "2E-17"
+    },
+    {
+      "year": 2020,
+      "month": "Січень",
+      "components": 5,
+      "residual": "1.9E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "9.2E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Березень",
+      "components": 5,
+      "residual": "3.2E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Квітень",
+      "components": 5,
+      "residual": "-1.06E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Травень",
+      "components": 5,
+      "residual": "-2.15E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Червень",
+      "components": 5,
+      "residual": "3.24E-15"
+    },
+    {
+      "year": 2020,
+      "month": "Липень",
+      "components": 5,
+      "residual": "6.5E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "-2.6E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "6.1E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "-6E-17"
+    },
+    {
+      "year": 2020,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "-1.3E-16"
+    },
+    {
+      "year": 2020,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "0E-17"
+    },
+    {
+      "year": 2021,
+      "month": "Січень",
+      "components": 5,
+      "residual": "7.8E-16"
+    },
+    {
+      "year": 2021,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "9E-17"
+    },
+    {
+      "year": 2021,
+      "month": "Березень",
+      "components": 5,
+      "residual": "1.06E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Квітень",
+      "components": 5,
+      "residual": "6E-17"
+    },
+    {
+      "year": 2021,
+      "month": "Травень",
+      "components": 5,
+      "residual": "-3.13E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Червень",
+      "components": 5,
+      "residual": "-5.7E-16"
+    },
+    {
+      "year": 2021,
+      "month": "Липень",
+      "components": 5,
+      "residual": "3.32E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "1.65E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "-7.1E-16"
+    },
+    {
+      "year": 2021,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "-3.13E-15"
+    },
+    {
+      "year": 2021,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "-1.3E-16"
+    },
+    {
+      "year": 2021,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "-3.6E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Січень",
+      "components": 5,
+      "residual": "-3.7E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "9.8E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Березень",
+      "components": 5,
+      "residual": "-6.1E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Квітень",
+      "components": 5,
+      "residual": "1.06E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Травень",
+      "components": 5,
+      "residual": "1.37E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Червень",
+      "components": 5,
+      "residual": "-1.23E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Липень",
+      "components": 5,
+      "residual": "1.23E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "2.79E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "-1.3E-15"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "-1E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "-6.5E-16"
+    },
+    {
+      "year": 2022,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "3E-17"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "components": 5,
+      "residual": "-2.5E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "-1.0650402134E-7"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "components": 5,
+      "residual": "8.3E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Квітень",
+      "components": 5,
+      "residual": "-8E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Травень",
+      "components": 5,
+      "residual": "-2.2E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Червень",
+      "components": 5,
+      "residual": "7E-17"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "components": 5,
+      "residual": "-2.74E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "-9E-17"
+    },
+    {
+      "year": 2023,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "-9.4E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "2.83E-15"
+    },
+    {
+      "year": 2023,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "-3.8E-16"
+    },
+    {
+      "year": 2023,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "7.7E-16"
+    },
+    {
+      "year": 2024,
+      "month": "Січень",
+      "components": 5,
+      "residual": "-7.3E-16"
+    },
+    {
+      "year": 2024,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "1.1E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Березень",
+      "components": 5,
+      "residual": "-2.4E-16"
+    },
+    {
+      "year": 2024,
+      "month": "Квітень",
+      "components": 5,
+      "residual": "-1.5E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Травень",
+      "components": 5,
+      "residual": "-3.6E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Червень",
+      "components": 5,
+      "residual": "-1.97E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Липень",
+      "components": 5,
+      "residual": "2.74E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "5.9E-16"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "2.75E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "-3.3E-16"
+    },
+    {
+      "year": 2024,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "1.93E-15"
+    },
+    {
+      "year": 2024,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "-3.8E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Січень",
+      "components": 5,
+      "residual": "4.5E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "4.2E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Березень",
+      "components": 5,
+      "residual": "-2.76E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Квітень",
+      "components": 5,
+      "residual": "9E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Травень",
+      "components": 5,
+      "residual": "6.3E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Червень",
+      "components": 5,
+      "residual": "-3.2E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Липень",
+      "components": 5,
+      "residual": "-1.4E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Серпень",
+      "components": 5,
+      "residual": "2.87E-15"
+    },
+    {
+      "year": 2025,
+      "month": "Вересень",
+      "components": 5,
+      "residual": "1.258525880E-8"
+    },
+    {
+      "year": 2025,
+      "month": "Жовтень",
+      "components": 5,
+      "residual": "-1.161322550E-8"
+    },
+    {
+      "year": 2025,
+      "month": "Листопад",
+      "components": 5,
+      "residual": "7.8E-16"
+    },
+    {
+      "year": 2025,
+      "month": "Грудень",
+      "components": 5,
+      "residual": "-1.05E-15"
+    },
+    {
+      "year": 2026,
+      "month": "Січень",
+      "components": 5,
+      "residual": "-3.5E-16"
+    },
+    {
+      "year": 2026,
+      "month": "Лютий",
+      "components": 5,
+      "residual": "6.3E-16"
+    },
+    {
+      "year": 2026,
+      "month": "Березень",
+      "components": 5,
+      "residual": "1.276306428E-8"
+    }
+  ],
+  "internal_series_gaps": [
+    {
+      "indicator": "Експорт",
+      "category": "Білорусь",
+      "missing": [
+        {
+          "year": 2020,
+          "month": "Січень"
+        },
+        {
+          "year": 2020,
+          "month": "Лютий"
+        },
+        {
+          "year": 2020,
+          "month": "Березень"
+        },
+        {
+          "year": 2020,
+          "month": "Квітень"
+        },
+        {
+          "year": 2020,
+          "month": "Травень"
+        },
+        {
+          "year": 2020,
+          "month": "Червень"
+        }
+      ]
+    },
+    {
+      "indicator": "Експорт",
+      "category": "Молдова",
+      "missing": [
+        {
+          "year": 2022,
+          "month": "Січень"
+        },
+        {
+          "year": 2022,
+          "month": "Лютий"
+        },
+        {
+          "year": 2023,
+          "month": "Січень"
+        },
+        {
+          "year": 2023,
+          "month": "Лютий"
+        },
+        {
+          "year": 2023,
+          "month": "Березень"
+        },
+        {
+          "year": 2024,
+          "month": "Вересень"
+        }
+      ]
+    },
+    {
+      "indicator": "Експорт",
+      "category": "Польща",
+      "missing": [
+        {
+          "year": 2023,
+          "month": "Січень"
+        },
+        {
+          "year": 2023,
+          "month": "Лютий"
+        },
+        {
+          "year": 2023,
+          "month": "Березень"
+        },
+        {
+          "year": 2023,
+          "month": "Липень"
+        },
+        {
+          "year": 2024,
+          "month": "Серпень"
+        }
+      ]
+    },
+    {
+      "indicator": "Експорт",
+      "category": "Румунія",
+      "missing": [
+        {
+          "year": 2023,
+          "month": "Січень"
+        },
+        {
+          "year": 2023,
+          "month": "Лютий"
+        },
+        {
+          "year": 2023,
+          "month": "Березень"
+        }
+      ]
+    },
+    {
+      "indicator": "Експорт",
+      "category": "Словаччина",
+      "missing": [
+        {
+          "year": 2023,
+          "month": "Січень"
+        },
+        {
+          "year": 2023,
+          "month": "Лютий"
+        },
+        {
+          "year": 2023,
+          "month": "Березень"
+        },
+        {
+          "year": 2024,
+          "month": "Вересень"
+        }
+      ]
+    },
+    {
+      "indicator": "Експорт",
+      "category": "Угорщина",
+      "missing": [
+        {
+          "year": 2022,
+          "month": "Серпень"
+        },
+        {
+          "year": 2022,
+          "month": "Жовтень"
+        },
+        {
+          "year": 2023,
+          "month": "Січень"
+        },
+        {
+          "year": 2023,
+          "month": "Лютий"
+        },
+        {
+          "year": 2023,
+          "month": "Березень"
+        }
+      ]
+    },
+    {
+      "indicator": "Імпорт",
+      "category": "Білорусь",
+      "missing": [
+        {
+          "year": 2022,
+          "month": "Грудень"
+        },
+        {
+          "year": 2023,
+          "month": "Січень"
+        }
+      ]
+    },
+    {
+      "indicator": "Структура споживання",
+      "category": "споживачами (учасниками ринку)",
+      "missing": [
+        {
+          "year": 2021,
+          "month": "Січень"
+        },
+        {
+          "year": 2021,
+          "month": "Лютий"
+        },
+        {
+          "year": 2021,
+          "month": "Березень"
+        },
+        {
+          "year": 2021,
+          "month": "Квітень"
+        },
+        {
+          "year": 2021,
+          "month": "Травень"
+        },
+        {
+          "year": 2021,
+          "month": "Червень"
+        },
+        {
+          "year": 2021,
+          "month": "Липень"
+        },
+        {
+          "year": 2021,
+          "month": "Серпень"
+        },
+        {
+          "year": 2021,
+          "month": "Вересень"
+        },
+        {
+          "year": 2021,
+          "month": "Жовтень"
+        },
+        {
+          "year": 2021,
+          "month": "Листопад"
+        },
+        {
+          "year": 2021,
+          "month": "Грудень"
+        }
+      ]
+    }
+  ],
+  "export_coverage_warnings": [
+    {
+      "year": 2022,
+      "month": "Січень",
+      "missing": [
+        "Молдова"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2022,
+      "month": "Лютий",
+      "missing": [
+        "Молдова"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2022,
+      "month": "Серпень",
+      "missing": [
+        "Угорщина"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2022,
+      "month": "Жовтень",
+      "missing": [
+        "Угорщина"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2023,
+      "month": "Січень",
+      "missing": [
+        "Молдова",
+        "Польща",
+        "Румунія",
+        "Словаччина",
+        "Угорщина"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2023,
+      "month": "Лютий",
+      "missing": [
+        "Молдова",
+        "Польща",
+        "Румунія",
+        "Словаччина",
+        "Угорщина"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2023,
+      "month": "Березень",
+      "missing": [
+        "Молдова",
+        "Польща",
+        "Румунія",
+        "Словаччина",
+        "Угорщина"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2023,
+      "month": "Липень",
+      "missing": [
+        "Польща"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2024,
+      "month": "Серпень",
+      "missing": [
+        "Польща"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    },
+    {
+      "year": 2024,
+      "month": "Вересень",
+      "missing": [
+        "Молдова",
+        "Словаччина"
+      ],
+      "note": "Comparison to five-country analytical reference; absence is not proof of error or zero"
+    }
+  ],
+  "normalization_passed": false,
+  "note": "Read-only diagnosis. Hypothetical sums do not authorize duplicate removal. No external validation in this run."
+}

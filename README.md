@@ -4,17 +4,26 @@
 
 ## Поточний стан
 
-Планування проєкту та перевірка джерела. Автоматичне оновлення даних і Power BI ще не реалізовано.
+Реалізовано контрольований ручний збір: пошук найновішого XLSX, архів оригіналу, погоджені адресні реконструкції, перевірка унікальності та порівняння версій. Розклад і автоматичний запис даних з Actions ще не ввімкнені; Power BI не підключений.
 
-- У Colab підтверджено завантаження XLSX та знаходження посилання на сторінці НКРЕКП.
-- Додано ручний тест GitHub Actions. Результат виконання у GitHub ще потрібно перевірити.
-- Розклад запусків вимкнений. Тест не змінює дані репозиторію.
+16.10.2026 успішно виконано повний ручний збір файлу від 01.09.2026. Прийнято 4566 рядків; усі 162 місячні підсумки імпорту/експорту точно узгоджуються. Перевірено аудит, оригінал і повторне приймання незміненого файлу. Пройшли 48 локальних тестів.
 
-## Запуск тесту
+Поточну версію визначає [`data/current.json`](data/current.json); CSV і аудит розміщені у відповідному `data/snapshots/<sha256>/`. Оригінал також зберігається в `data/raw/<sha256>/`.
 
-Actions → Test NКРЕКП source → Run workflow.
+- [Правила й обмеження реконструкцій](docs/corrections.md) — це припущення проєкту, а не офіційні виправлення НКРЕКП.
+- [Підсумок перевірки та ручного збору](docs/collector_status.md).
+- [Зовнішня перевірка серпня 2022](docs/diagnostics/2026-10-16-august-2022.md).
+- [Фінальна діагностика всього джерела](docs/diagnostics/2026-10-16-final.json).
 
-Тест знаходить файл, перевіряє формат XLSX, читає аркуш Base_opt та перевіряє колонки. Підсумок зберігається як тимчасовий артефакт. Якщо знайдено кілька версій або змінилася структура, тест завершується помилкою; він не вгадує актуальний файл. Правила вибору версій та об’єднання історії будуть визначені до реалізації збирача.
+Відсутні записи країн не замінено нулями. Точні суми не доводять повноти розподілу чи незалежної достовірності джерела. Історичні діагностичні файли описують стан на відповідному етапі; актуальний стан наведено вище.
+
+## Запуск
+
+Ручний збір: `python -m scripts.collect_nerc`.
+
+Тести: `python -m unittest discover -s tests -v`.
+
+Actions → Test NКРЕКП source → Run workflow — окремий тест доступності та структури джерела, який не публікує робочі дані. Локальний збирач обирає найновішу дату назви файлу; за неоднозначності або невідповідності структури відхиляє результат. Попередня прийнята версія зберігається.
 
 ## Джерело та обмеження
 
@@ -31,4 +40,4 @@ Actions → Test NКРЕКП source → Run workflow.
 
 Monthly Ukrainian electricity market research covering trade flows, prices, generation and consumption mix, and renewable energy shares.
 
-This repository is currently at the planning and source-validation stage. A manually triggered GitHub Actions test downloads and validates the source workbook. Scheduled collection, revision handling, and dashboard refresh are not implemented yet.
+Controlled manual collection, revision comparison, source archiving and explicitly reviewed analytical corrections are implemented. On 16 October 2026, a complete manual run accepted 4,566 observations from the workbook dated 1 September 2026; all 162 monthly trade totals reconcile exactly and 48 local tests pass. Scheduled collection and automatic repository writes are not enabled. Missing country records are not imputed as zero; corrections are project assumptions, not official NERC amendments.
