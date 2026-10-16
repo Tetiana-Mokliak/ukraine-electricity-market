@@ -4,7 +4,7 @@
 
 ## Поточний стан
 
-Реалізовано контрольований ручний збір: пошук найновішого XLSX, архів оригіналу, погоджені адресні реконструкції, перевірка унікальності та порівняння версій. Розклад і автоматичний запис даних з Actions ще не ввімкнені; Power BI не підключений.
+Реалізовано контрольований ручний збір: пошук найновішого XLSX, архів оригіналу, погоджені адресні реконструкції, перевірка унікальності та порівняння версій. Додано автоматичний збір у GitHub Actions: щодня о 07:17 UTC, із записом у main тільки прийнятих змін. Power BI ще не підключений.
 
 16.10.2026 успішно виконано повний ручний збір файлу від 01.09.2026. Прийнято 4566 рядків; усі 162 місячні підсумки імпорту/експорту точно узгоджуються. Перевірено аудит, оригінал і повторне приймання незміненого файлу. Пройшли 48 локальних тестів.
 
@@ -16,6 +16,16 @@
 - [Фінальна діагностика всього джерела](docs/diagnostics/2026-10-16-final.json).
 
 Відсутні записи країн не замінено нулями. Точні суми не доводять повноти розподілу чи незалежної достовірності джерела. Історичні діагностичні файли описують стан на відповідному етапі; актуальний стан наведено вище.
+
+## Автоматичне оновлення
+
+Workflow `Update NERC data` перевіряє сторінку щодня о 07:17 UTC (час старту в GitHub може затримуватися), а також після змін коду збирача. Ручний запуск: Actions → Update NERC data → Run workflow.
+
+Вміст Excel порівнюється за SHA-256, а не лише назвою чи URL. Однаковий файл → без нового знімка й коміту. Новий вміст → архів, погоджені правила, перевірки структури, ключів, кварталів, точних торговельних сум та порівняння версій. Лише після успіху оновлюється `data/current.json` і створюється коміт. Якщо зникли попередні ключі або є інша помилка — поточна версія залишається, запуск завершується помилкою. Нові реконструкції автоматично не вигадуються.
+
+Повернення до раніше архівованого вмісту після іншої прийнятої версії потребує перевірки; історичний аудит не перезаписується. Якщо змінено байти Excel, але записи ті самі, новий оригінал зберігається з позначкою `file_only_change`.
+
+Аудит запуску та відхилений оригінал доступні в артефактах Actions 14 днів. Для незміненого файла зберігається лише короткий результат запуску, без нових копій Excel у репозиторії. Локально пройшли 54 тести; реальний XLSX перевірено в ізольованому прийманні та повторному запуску.
 
 ## Запуск
 
@@ -40,4 +50,4 @@ Actions → Test NКРЕКП source → Run workflow — окремий тест
 
 Monthly Ukrainian electricity market research covering trade flows, prices, generation and consumption mix, and renewable energy shares.
 
-Controlled manual collection, revision comparison, source archiving and explicitly reviewed analytical corrections are implemented. On 16 October 2026, a complete manual run accepted 4,566 observations from the workbook dated 1 September 2026; all 162 monthly trade totals reconcile exactly and 48 local tests pass. Scheduled collection and automatic repository writes are not enabled. Missing country records are not imputed as zero; corrections are project assumptions, not official NERC amendments.
+Controlled manual collection, revision comparison, source archiving and explicitly reviewed analytical corrections are implemented. On 16 October 2026, a complete manual run accepted 4,566 observations from the workbook dated 1 September 2026; all 162 monthly trade totals reconcile exactly and 48 local tests pass. A daily GitHub Actions check at 07:17 UTC is configured, committing only validated source changes; unchanged SHA-256 creates no new snapshot or data commit. Missing country records are not imputed as zero; corrections are project assumptions, not official NERC amendments.

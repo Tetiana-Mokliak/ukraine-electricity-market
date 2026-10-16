@@ -1,4 +1,4 @@
-"""Manual collector: immutable snapshots, atomic current pointer, no scheduling."""
+"""Controlled collector: immutable snapshots, hash deduplication, atomic pointer."""
 import csv
 import hashlib
 import json
@@ -7,6 +7,8 @@ import re
 import tempfile
 import time
 from datetime import datetime, timezone
+from collections import defaultdict
+from decimal import Decimal
 from html.parser import HTMLParser
 from io import BytesIO
 from pathlib import Path
@@ -15,7 +17,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 from urllib.request import urlopen
 from zipfile import ZipFile, is_zipfile
 from scripts.updates import COLUMNS, normalize, plan_update
-from scripts.corrections import apply_reviewed_corrections
+from scripts.corrections import apply_reviewed_corrections, number, COUNTRIES
 
 PAGE_URL = ('https://www.nerc.gov.ua/monitoring-rinku-elektrichnoyi-energiyi/'
             'indykatory-ta-pokaznyky-monitorynhu-rynku-elektrychnoi-enerhii-'
@@ -97,6 +99,35 @@ def atomic_json(path, value):
     finally:
         if os.path.exists(name): os.unlink(name)
 
+
+def check_trade_totals(rows):
+    """Block new arithmetic defects; report missing countries without imputation."""
+    groups = defaultdict(list)
+    for row in rows:
+        if row['Показник'] in ('Імпорт', 'Експорт'):
+            groups[row['Рік'], row['Місяць'], row['Показник']].append(row)
+    warnings = []
+    for (year, month, indicator), group in groups.items():
+        if month == 'не застосовується':
+            raise ValueError('Unexpected quarterly trade grain; manual review required')
+        if any(r['Одиниці виміру'] != 'тис. МВт×год' for r in group):
+            raise ValueError('Trade units changed; manual review required')
+        totals = [r for r in group if r['Категорія'] == 'усього']
+        details = [r for r in group if r['Категорія'] != 'усього']
+        if any(number(r['Значення']) < 0 for r in group):
+            raise ValueError('Negative trade value; manual review required')
+        if (len(totals) != 1 or sum((number(r['Значення']) for r in details), Decimal(0))
+                != number(totals[0]['Значення'])):
+            raise ValueError(f'Trade total does not reconcile exactly: {year} {month} {indicator}')
+        if indicator == 'Експорт':
+            missing = sorted(COUNTRIES - {r['Категорія'] for r in details})
+            if missing:
+                warnings.append(dict(year=year, month=month, indicator=indicator,
+                                     missing_categories=missing,
+                                     basis='Five-country analytical reference; absence does not establish zero or source error'))
+    return dict(trade_groups_checked=len(groups), exact_trade_totals=True,
+                export_coverage_warnings=warnings)
+
 def accept_payload(root, url, version, payload, reader=read_workbook):
     root = Path(root)
     pointer = root / 'current.json'
@@ -106,6 +137,8 @@ def accept_payload(root, url, version, payload, reader=read_workbook):
         raise ValueError('Source version older than current version')
     if old and digest == old['sha256']:
         return {'status': 'unchanged', 'sha256': digest}
+    if (root / 'snapshots' / digest).exists():
+        raise ValueError('Previously archived source reappeared; manual review required')
     # Preserve source even when validation rejects it. This is not published data.
     raw = root / 'raw' / digest
     raw.mkdir(parents=True, exist_ok=True)
@@ -113,6 +146,7 @@ def accept_payload(root, url, version, payload, reader=read_workbook):
     incoming, corrections = apply_reviewed_corrections(reader(payload, version))
     atomic_json(raw / 'corrections.json', corrections)
     incoming = list(normalize(incoming).values())
+    quality = check_trade_totals(incoming)
     previous = []
     if old:
         previous = json.loads((root / old['snapshot'] / 'rows.json').read_text(encoding='utf-8'))
@@ -130,6 +164,7 @@ def accept_payload(root, url, version, payload, reader=read_workbook):
         writer.writeheader(); writer.writerows(update['rows'])
     audit = {k: v for k, v in update.items() if k != 'rows'}
     audit.update({'status': 'updated' if update['changed'] else 'file_only_change',
+                  'quality': quality,
                   'corrections': corrections,
                   'source_url': url, 'version_date': version, 'sha256': digest,
                   'previous_sha256': old['sha256'] if old else None,
@@ -140,9 +175,19 @@ def accept_payload(root, url, version, payload, reader=read_workbook):
     return audit
 
 def main():
-    url, version = select_latest(download(PAGE_URL).decode('utf-8'))
-    result = accept_payload('data', url, version, download(url))
+    try:
+        url, version = select_latest(download(PAGE_URL).decode('utf-8'))
+        result = accept_payload('data', url, version, download(url))
+    except Exception as error:
+        atomic_json(Path('outputs/collection_failure.json'),
+                    {'status': 'rejected', 'error': str(error),
+                     'retrieved_at': datetime.now(timezone.utc).isoformat()})
+        raise
     atomic_json(Path('outputs/collection_result.json'), result)
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    summary = {k: result[k] for k in ('status', 'sha256', 'version_date') if k in result}
+    for key in ('added', 'revised', 'missing'):
+        if key in result:
+            summary[key] = len(result[key])
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
 
 if __name__ == '__main__': main()

@@ -1,0 +1,84 @@
+name: Update NERC data
+
+on:
+  schedule:
+    - cron: '17 7 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/collect-nerc.yml'
+      - 'scripts/collect_nerc.py'
+      - 'scripts/corrections.py'
+      - 'scripts/updates.py'
+      - 'requirements.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nerc-data-main
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Test acceptance rules
+        run: python -m unittest discover -s tests -v
+      - name: Check latest source and accept only validated changes
+        run: python -m scripts.collect_nerc
+      - name: Save changed data only
+        shell: bash
+        run: |
+          git add -- data/
+          if git diff --cached --quiet; then
+            echo 'No source changes; no data commit created.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update validated NERC source snapshot'
+          git push origin HEAD:main
+          echo 'Validated source changes committed to main.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Save run audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nerc-collection-audit
+          path: outputs/collection_*.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Preserve rejected source for review
+        if: failure()
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          import subprocess
+          paths = subprocess.check_output(['git', 'ls-files', '--others', '--exclude-standard', '-z', '--', 'data/raw/']).decode().split('\0')
+          for name in filter(None, paths):
+              source = Path(name)
+              target = Path('outputs/rejected-source') / source.relative_to('data/raw')
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, target)
+          PY
+      - name: Upload rejected source
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nerc-rejected-source
+          path: outputs/rejected-source/
+          if-no-files-found: ignore
+          retention-days: 14
