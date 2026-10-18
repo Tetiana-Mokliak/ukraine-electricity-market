@@ -12,6 +12,7 @@ on:
       - 'scripts/corrections.py'
       - 'scripts/updates.py'
       - 'requirements.txt'
+      - 'scripts/prepare_power_bi.py'
 
 permissions:
   contents: write
@@ -38,12 +39,14 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Check latest source and accept only validated changes
         run: python -m scripts.collect_nerc
+      - name: Prepare validated Power BI tables
+        run: python -m scripts.prepare_power_bi
       - name: Save changed data only
         shell: bash
         run: |
           git add -- data/
           if git diff --cached --quiet; then
-            echo 'No source changes; no data commit created.' >> "$GITHUB_STEP_SUMMARY"
+            echo 'No data changes; no data commit created.' >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git config user.name 'github-actions[bot]'

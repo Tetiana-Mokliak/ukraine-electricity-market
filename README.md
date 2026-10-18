@@ -51,3 +51,19 @@ Actions → Test NКРЕКП source → Run workflow — окремий тест
 Monthly Ukrainian electricity market research covering trade flows, prices, generation and consumption mix, and renewable energy shares.
 
 Controlled manual collection, revision comparison, source archiving and explicitly reviewed analytical corrections are implemented. On 16 October 2026, a complete manual run accepted 4,566 observations from the workbook dated 1 September 2026; all 162 monthly trade totals reconcile exactly and 48 local tests pass. A daily GitHub Actions check at 07:17 UTC is configured, committing only validated source changes; unchanged SHA-256 creates no new snapshot or data commit. Missing country records are not imputed as zero; corrections are project assumptions, not official NERC amendments.
+
+## Таблиці для Power BI
+
+`python -m scripts.prepare_power_bi` читає прийнятий знімок через `data/current.json` і формує CSV у `data/power_bi/`. Workflow запускає підготовку після успішної перевірки джерела, зокрема коли джерело незмінне, але змінено код перетворень. Коміт даних створюється лише за зміни вмісту. Помилка підготовки блокує коміт даних цього запуску; опубліковані файли залишаються попередніми.
+
+- `trade_countries.csv`: дата, напрямок, країна, обсяг; без «усього».
+- `trade_coverage.csv`: кількість наявних країн і ознака підтвердженого нульового підсумку; це не гарантія повноти країн.
+- `market.csv`: дата, сегмент, обсяг (тис. МВт·год), ціна (грн/МВт·год).
+- `green.csv`: дата, група виробників, придбаний обсяг, тариф (грн/кВт·год).
+- `generation.csv`, `consumption.csv`: місячні частки за категоріями.
+- `renewables.csv`: частки кожного типу серед ВДЕ та в загальному виробництві.
+- `calendar.csv`: один рядок на місяць, дата першого числа, рік, номер/назва місяця, квартал. Це місячний довідник; для стандартної time intelligence у Power BI може знадобитися окремий щоденний календар.
+
+Перетворення перенесено з навчального ноутбука користувачки: прибрано дослідницькі виводи, дата формується один раз лише для відібраних місячних показників. Перевіряються ключі, пропуски, одиниці, суми структур та узгодження двох представлень частки ВДЕ. Допуск часток — 0.000001 відсоткового пункту, без зміни значень; він не змінює точних правил торговельних реконструкцій. Відсутність рядка країни не заповнюється нулем. Відсотки залишаються у шкалі 0–100; ціни й частки не можна довільно підсумовувати за місяцями.
+
+Power BI ще потрібно підключити до сталих raw-адрес цих CSV та окремо налаштувати оновлення моделі. CSV зберігаються в UTF-8 з BOM, дати — YYYY-MM-DD. Вихідний Excel і погоджені реконструкції не змінюються цим скриптом.
