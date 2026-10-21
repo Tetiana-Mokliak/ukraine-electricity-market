@@ -1,0 +1,48 @@
+name: Update Energy Map outages
+
+on:
+  schedule:
+    - cron: '37 8 5 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: energy-map-data-main
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test locally without API calls
+        run: python -m unittest discover -s tests -p 'test_energy_map.py' -v
+      - name: Check source once per month
+        id: source
+        env:
+          ENERGY_MAP_TOKEN: ${{ secrets.ENERGY_MAP_TOKEN }}
+        run: python -m scripts.collect_energy_map
+      # Analytical preparation will be added by the project author.
+      # Gate that future step on changed == 'true' or preparation_pending.
+      - name: Save source and last successful check
+        shell: bash
+        run: |
+          git add -- data/energy_map/
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update Energy Map outages source status'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
