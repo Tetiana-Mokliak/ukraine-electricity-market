@@ -25,7 +25,7 @@ class PrepareEnergyMapTests(unittest.TestCase):
         self.assertEqual(int(self.clean['datetime_reconstructed'].sum()), 328)
         self.assertEqual(int(self.clean['outage_amount'].isna().sum()), 3831)
         self.assertEqual(self.clean['outage_intensity'].value_counts().to_dict(), {
-            'Без обмежень': 24527, 'Невідомо': 3831, 'Змінна': 894,
+            'Без обмежень': 24527, 'Невідомо': 3831, 'Кілька рівнів': 894,
             'Висока': 482, 'Помірна': 457, 'Низька': 456})
         self.assertEqual(int(self.raw['date'].isna().sum()), 328)
 

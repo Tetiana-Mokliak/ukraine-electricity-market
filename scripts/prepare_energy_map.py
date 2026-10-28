@@ -13,7 +13,7 @@ import pandas as pd
 
 from scripts.collect_energy_map import COLUMNS, ROOT
 
-PROCESSOR_VERSION = '1'
+PROCESSOR_VERSION = '2'
 ZONE = ZoneInfo('Europe/Kyiv')
 
 
@@ -75,7 +75,7 @@ def classify_outage_intensity(min_value, max_value):
         return 'Помірна'
     if min_value > 2:
         return 'Висока'
-    return 'Змінна'
+    return 'Кілька рівнів'
 
 
 def expected_hours(day):
