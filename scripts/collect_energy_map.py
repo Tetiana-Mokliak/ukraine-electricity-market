@@ -108,7 +108,7 @@ def main():
         payload = download(token)
     changed = accept(payload, args.data_dir, now.isoformat())
     result = 'changed' if changed else 'unchanged'
-    print(f'Energy Map: {result}. Analytical preparation is pending until its script is added.')
+    print(f'Energy Map source: {result}; preparation status saved.')
     if output := os.environ.get('GITHUB_OUTPUT'):
         with open(output, 'a', encoding='utf-8') as stream:
             stream.write(f'changed={str(changed).lower()}\n')

@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '37 8 5 * *'
   workflow_dispatch:
+    inputs:
+      check_source:
+        description: 'Contact Energy Map API (uses quota); leave off for saved-file preparation'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,16 +29,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install project dependencies
+        run: python -m pip install -r requirements.txt
       - name: Test locally without API calls
-        run: python -m unittest discover -s tests -p 'test_energy_map.py' -v
+        run: python -m unittest discover -s tests -p '*energy_map*.py' -v
       - name: Check source once per month
         id: source
+        if: github.event_name == 'schedule' || inputs.check_source == true
         env:
           ENERGY_MAP_TOKEN: ${{ secrets.ENERGY_MAP_TOKEN }}
         run: python -m scripts.collect_energy_map
-      # Analytical preparation will be added by the project author.
-      # Gate that future step on changed == 'true' or preparation_pending.
-      - name: Save source and last successful check
+      - name: Prepare saved snapshot if changed or pending
+        id: preparation
+        run: python -m scripts.prepare_energy_map
+      - name: Save source status even if preparation needs review
+        if: always() && (steps.source.outcome == 'success' || steps.preparation.outcome == 'success' || steps.preparation.outcome == 'failure')
         shell: bash
         run: |
           git add -- data/energy_map/
@@ -42,7 +52,7 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update Energy Map outages source status'
+          git commit -m 'Update Energy Map outages data and status'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main

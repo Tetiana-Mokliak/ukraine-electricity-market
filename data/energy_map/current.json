@@ -12,5 +12,10 @@
   "row_count": 30647,
   "missing_date_rows": 328,
   "formula_hour_rows": 328,
-  "preparation_pending": true
+  "preparation_pending": false,
+  "processed_sha256": "8f5f35d119a9453172e7ee5a48e1a7a08241d0077fa3d8a664772c2b519b63b4",
+  "processor_version": "1",
+  "processed_file": "processed/outages.csv",
+  "processed_file_sha256": "2bfcaad53d794e6ee58bba05156f2bbb136c8a6b956dedb57fcd6450e01d62d1",
+  "last_prepared_at_utc": "2026-10-28T16:32:50.243134+00:00"
 }
