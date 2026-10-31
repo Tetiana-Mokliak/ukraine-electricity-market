@@ -14,8 +14,8 @@
   "formula_hour_rows": 328,
   "preparation_pending": false,
   "processed_sha256": "8f5f35d119a9453172e7ee5a48e1a7a08241d0077fa3d8a664772c2b519b63b4",
-  "processor_version": "2",
+  "processor_version": "3",
   "processed_file": "processed/outages.csv",
-  "processed_file_sha256": "04c05bba2cf194d4d099706edf8dfeb109ebc7eb85699980e2b1aa5e37f3d741",
-  "last_prepared_at_utc": "2026-10-28T17:47:13.355360+00:00"
+  "processed_file_sha256": "88cd7e60ecafaef5174cca2a17f11984cb490600f10f48c1a4a1df1e26e0c299",
+  "last_prepared_at_utc": "2026-10-31T12:08:49.297549+00:00"
 }

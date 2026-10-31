@@ -12,8 +12,9 @@ import numpy as np
 import pandas as pd
 
 from scripts.collect_energy_map import COLUMNS, ROOT
+from scripts.hourly_time import normalize_hours, csv_ready
 
-PROCESSOR_VERSION = '2'
+PROCESSOR_VERSION = '3'
 ZONE = ZoneInfo('Europe/Kyiv')
 
 
@@ -109,6 +110,7 @@ def clean_outages(frame):
     if not frame['outage_use'].isin(['так', 'ні']).all():
         raise ValueError('Missing or unexpected outage_use')
     result = restore_known_dates(frame)
+    result['hour_original'] = frame['hour'].reset_index(drop=True)
     validate_calendar(result)
     no_outage = result['outage_use'].eq('ні')
     result.loc[no_outage & result['outage_amount'].isna(), 'outage_amount'] = '0'
@@ -120,7 +122,7 @@ def clean_outages(frame):
     result = result.rename(columns={'number': 'outage_coverage'})
     result['outage_intensity'] = result.apply(
         lambda row: classify_outage_intensity(row['outage_amount_min'], row['outage_amount_max']), axis=1)
-    return result
+    return normalize_hours(result, strict=True)
 
 
 def prepare(directory=ROOT / 'data/energy_map'):
@@ -152,11 +154,14 @@ def prepare(directory=ROOT / 'data/energy_map'):
         'intensity_counts': {str(k): int(v) for k, v in clean['outage_intensity'].value_counts().items()},
         'unknown_amount_rows': int(clean['outage_amount'].isna().sum()),
         'calendar_timezone': 'Europe/Kyiv', 'calendar_validated': True,
+        'time_key': 'start_utc',
+        'time_status_counts': {str(k): int(v) for k, v in clean['time_status'].value_counts().items()},
+        'repeated_hour_assumption': 'Repeated legacy labels assigned in source occurrence order.',
         'source_url': state['source_url'],
     }
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = output.with_suffix('.csv.tmp')
-    clean.to_csv(temporary, index=False, date_format='%Y-%m-%d', encoding='utf-8-sig')
+    csv_ready(clean).to_csv(temporary, index=False, encoding='utf-8-sig')
     audit_tmp = audit_path.with_suffix('.json.tmp')
     audit_tmp.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     state.update(processed_sha256=state['sha256'], processor_version=PROCESSOR_VERSION,

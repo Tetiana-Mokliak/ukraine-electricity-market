@@ -1,6 +1,6 @@
 {
   "source_sha256": "8f5f35d119a9453172e7ee5a48e1a7a08241d0077fa3d8a664772c2b519b63b4",
-  "processor_version": "2",
+  "processor_version": "3",
   "row_count": 30647,
   "data_start_date": "2023-01-01",
   "data_end_date": "2026-06-30",
@@ -17,5 +17,11 @@
   "unknown_amount_rows": 3831,
   "calendar_timezone": "Europe/Kyiv",
   "calendar_validated": true,
+  "time_key": "start_utc",
+  "time_status_counts": {
+    "calendar_matched": 30641,
+    "source_order_assumption": 6
+  },
+  "repeated_hour_assumption": "Repeated legacy labels assigned in source occurrence order.",
   "source_url": "https://energy-map.info/uk/datasets/0f8f9882-1fb2-47c6-81dc-31fbad914f16"
 }
