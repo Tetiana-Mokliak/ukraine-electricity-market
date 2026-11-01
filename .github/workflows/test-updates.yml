@@ -8,6 +8,11 @@ on:
       - 'scripts/diagnose_source.py'
       - 'tests/**'
       - 'scripts/prepare_power_bi.py'
+      - 'scripts/hourly_time.py'
+      - 'scripts/hourly_trade_updates.py'
+      - 'scripts/prepare_hourly_trade.py'
+      - 'scripts/entsoe_hourly_check.py'
+      - 'data/hourly_trade/rules.json'
       - 'requirements.txt'
       - '.github/workflows/test-updates.yml'
   workflow_dispatch:

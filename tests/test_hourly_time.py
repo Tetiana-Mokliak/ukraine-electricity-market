@@ -42,6 +42,18 @@ class HourlyTimeTests(unittest.TestCase):
         self.assertEqual(serialized.loc[4, 'start_local'], '2021-10-31T03:00:00+02:00')
         self.assertTrue(pd.to_datetime(serialized.start_utc, utc=True).is_unique)
 
+    def test_partial_legacy_fall_preserves_only_the_unknown_hour(self):
+        labels = [f'{h:02d}:00-{(h+1)%24:02d}:00' for h in range(24)]
+        frame = pd.DataFrame({'date': '2024-10-27', 'hour': labels, 'amount': range(24)})
+        result = normalize_hours(frame, allow_legacy_fall_partial=True)
+        self.assertEqual(result.start_utc.notna().sum(), 23)
+        self.assertEqual(result.time_status.eq('ambiguous_fall_single').sum(), 1)
+        self.assertFalse(result.calendar_complete.any())
+        self.assertEqual(result.amount.tolist(), frame.amount.tolist())
+        broken = frame.copy()
+        broken.loc[5, 'hour'] = labels[6]
+        self.assertTrue(normalize_hours(broken, allow_legacy_fall_partial=True).start_utc.isna().all())
+
 
 if __name__ == '__main__':
     unittest.main()

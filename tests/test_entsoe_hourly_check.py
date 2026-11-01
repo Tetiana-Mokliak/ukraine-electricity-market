@@ -44,24 +44,31 @@ class HourlyReconciliationTests(unittest.TestCase):
         self.assertEqual(left.amount.tolist(), [10, 0])
 
     def test_reviewed_cleanup_only_and_no_value_changes(self):
+        from scripts.hourly_time import hourly_calendar
         rows = []
         routes = [('ОЕС України', 'Польща'), ('ОЕС України', 'Молдова'),
                   ('Бурштинський енергоострів', 'Румунія'),
                   ('Бурштинський енергоострів', 'Словаччина'), ('Бурштинський енергоострів', 'Угорщина')]
+        rules = []
         for day in pd.date_range('2021-10-01', '2021-10-31'):
+            date = day.strftime('%Y-%m-%d')
             for zone, country in routes:
-                for value in (0, 41):
-                    rows.append(dict(date=day.strftime('%Y-%m-%d'), hour='03:00-04:00',
-                                     energy_system=zone, country=country, customs_regime='експорт', amount=value))
+                base = dict(date=date, energy_system=zone, country=country, customs_regime='експорт')
+                for hour in hourly_calendar(day).legacy_hour:
+                    rows.append(dict(base, hour=hour, amount=41.0))
+                if day.day < 31:
+                    rows.append(dict(base, hour='03:00-04:00', amount=0.0))
+                    rules.append(dict(base, hour='03:00-04:00', expected_day_rows=25,
+                                      expected_label_rows=2, reason='reviewed_zero', decision_basis='author'))
         raw = pd.DataFrame(rows)
-        clean, removed = remove_reviewed_zeros(raw)
-        self.assertEqual(len(removed), 149)
-        self.assertEqual(len(raw) - len(clean), 149)
+        clean, removed = remove_reviewed_zeros(raw, rules)
+        self.assertEqual(len(removed), 150)
+        self.assertEqual(len(raw) - len(clean), 150)
         self.assertEqual(clean.amount.sum(), raw.amount.sum())
-        self.assertEqual(len(clean[clean.date.eq('2021-10-31')]), 10)
-        self.assertEqual(len(clean[clean.date.eq('2021-10-19') & clean.country.eq('Румунія')]), 2)
+        self.assertEqual(len(clean[clean.date.eq('2021-10-31')]), 125)
+        self.assertEqual(len(clean[clean.date.eq('2021-10-19') & clean.country.eq('Румунія')]), 24)
         with self.assertRaises(ValueError):
-            remove_reviewed_zeros(raw.iloc[1:])
+            remove_reviewed_zeros(raw.iloc[1:], rules)
 
 
 if __name__ == '__main__':
