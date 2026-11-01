@@ -1,0 +1,29 @@
+{
+  "processor_version": "6",
+  "source_sha256": "9d9ef435aa5c97199f6c24a9dbb49b13a95570fae2c286a7b355a37f98223b0f",
+  "source_rows": 753365,
+  "output_rows": 753153,
+  "removed_zero_rows": 212,
+  "data_start_date": "2019-07-01",
+  "data_end_date": "2026-06-30",
+  "timezone": "Europe/Kyiv",
+  "time_key": [
+    "energy_system",
+    "country",
+    "customs_regime",
+    "start_utc"
+  ],
+  "time_status_counts": {
+    "calendar_matched": 751479,
+    "calendar_matched_partial_day": 1587,
+    "ambiguous_fall_single": 69,
+    "source_order_assumption": 18
+  },
+  "incomplete_day_route_count": 69,
+  "undefined_utc_rows": 69,
+  "daily_sums_preserved": true,
+  "retained_values_preserved": true,
+  "source_values": "Energy Map only; private external comparison is not published",
+  "spring_pattern_assumption_rows": 20,
+  "repeated_hour_assumption": "Accepted source occurrence order; retained across reordered history"
+}

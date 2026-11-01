@@ -1,0 +1,17 @@
+{
+  "snapshot": "snapshots/427d106ca6ebb3d1be83e24c",
+  "processor_version": "6",
+  "rules_sha256": "e3ad0faefe84f53df876adb4123e5a7f11d37d64d9fe1cdceab4faab5cca457a",
+  "source_sha256": "9d9ef435aa5c97199f6c24a9dbb49b13a95570fae2c286a7b355a37f98223b0f",
+  "data_end_date": "2026-06-30",
+  "files": {
+    "audit.json": "606646ea0f3f6c37fc47be637b03794e22265b37a8b171a84144f5f21cf5cacb",
+    "changes.json": "871c241979bb6bda5ca679bafdbc84db4e6c339b5731b59bd91686b2dd480102",
+    "incomplete_days.csv": "b5ceece74c3bf4f9325f538d095f7f544350dd914e4d9319c59d2b857fa458a3",
+    "input.csv.gz": "bb13818ad5d74a68b51d2480784d9a28e78d04f7175853596b4a944802214cf4",
+    "removed_rows.csv": "6bd9f306cc8eccc9faab69fa554823c22a1f2f9f4ee53c9f8963272cb22c02bf",
+    "source.csv.gz": "f5c1c5fe893c279230066fcb466f32debc33f975f938b059cfb5f73ed0ee7196",
+    "trade.csv.gz": "6a3a7b03f6d194cd65bea1185389825f2c69d69cf358562c6c12e6a8e5020f05",
+    "unresolved_time.csv": "27bf2498ff8db51f16978f666b8521153884495da628c7151c62c155ac482e58"
+  }
+}

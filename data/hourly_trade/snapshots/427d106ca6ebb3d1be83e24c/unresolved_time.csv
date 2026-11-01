@@ -1,0 +1,70 @@
+date,hour,energy_system,country,customs_regime,amount,source_row,hour_original,time_status,calendar_complete,start_utc,end_utc,start_local,end_local,external_check_status,calendar_mapping_basis
+2019-10-27,03:00-04:00,ОЕС України,Білорусь,експорт,0.0,45315,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Білорусь-0.4-110,експорт,0.0,45339,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Молдова,експорт,53.0,45363,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Польща,експорт,210.0,45387,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Російська Федерація,експорт,0.0,45411,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,45460,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Білорусь,імпорт,110.0,45509,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Білорусь-0.4-110,імпорт,0.0,45533,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Молдова,імпорт,0.0,45557,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Польща,імпорт,0.0,45581,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,ОЕС України,Російська Федерація,імпорт,170.0,45605,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,Бурштинський енергоострів,Румунія,імпорт,0.0,45629,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,Бурштинський енергоострів,Словаччина,імпорт,800.0,45653,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2019-10-27,03:00-04:00,Бурштинський енергоострів,Угорщина,імпорт,0.0,45677,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Білорусь,експорт,0.0,185093,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Білорусь-0.4-110,експорт,0.0,185117,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Молдова,експорт,20.0,185141,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Польща,експорт,210.0,185165,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Російська Федерація,експорт,0.0,185189,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,209.0,185213,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,365.0,185262,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Білорусь,імпорт,0.0,185286,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Білорусь-0.4-110,імпорт,0.0,185310,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Молдова,імпорт,0.0,185334,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Польща,імпорт,0.0,185358,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,ОЕС України,Російська Федерація,імпорт,0.0,185382,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,Бурштинський енергоострів,Румунія,імпорт,0.0,185406,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2020-10-25,03:00-04:00,Бурштинський енергоострів,Угорщина,імпорт,14.0,185455,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Білорусь,експорт,0.0,327709,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Білорусь-0.4-110,експорт,0.0,327733,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Російська Федерація,експорт,0.0,327807,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Білорусь,імпорт,0.0,327906,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Білорусь-0.4-110,імпорт,0.0,327930,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Молдова,імпорт,0.0,327954,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Польща,імпорт,0.0,327978,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,ОЕС України,Російська Федерація,імпорт,0.0,328002,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,Бурштинський енергоострів,Румунія,імпорт,0.0,328026,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,Бурштинський енергоострів,Словаччина,імпорт,0.0,328050,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2021-10-31,03:00-04:00,Бурштинський енергоострів,Угорщина,імпорт,0.0,328074,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,експорт,0.0,431778,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,експорт,0.0,431802,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,експорт,0.0,431826,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,експорт,0.0,431850,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,експорт,0.0,431874,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,імпорт,0.0,431898,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,імпорт,0.0,431922,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,імпорт,0.0,431946,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,імпорт,0.0,431970,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2022-10-30,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,імпорт,0.0,431994,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,експорт,0.0,519138,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,експорт,0.0,519162,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,експорт,0.0,519186,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,експорт,0.0,519210,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,експорт,0.0,519234,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,імпорт,0.0,519258,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,імпорт,0.0,519282,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,імпорт,0.0,519306,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,імпорт,0.0,519330,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2023-10-29,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,імпорт,0.0,519354,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,імпорт,0.0,606501,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,експорт,100.0,606502,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,імпорт,0.0,606549,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,експорт,0.0,606550,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,імпорт,0.0,606597,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,експорт,94.0,606598,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,імпорт,0.0,606645,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,експорт,60.0,606646,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,імпорт,0.0,606693,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status
+2024-10-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,експорт,84.0,606694,03:00-04:00,ambiguous_fall_single,False,,,,,private_comparison_not_published,calendar_or_recorded_time_status

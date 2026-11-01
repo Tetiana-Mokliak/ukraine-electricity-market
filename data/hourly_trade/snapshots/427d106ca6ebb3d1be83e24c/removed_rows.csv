@@ -1,0 +1,213 @@
+date,hour,energy_system,country,customs_regime,amount,source_row,correction_reason,decision_basis
+2021-10-01,03:00-04:00,ОЕС України,Молдова,експорт,0.0,316087,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-01,03:00-04:00,ОЕС України,Польща,експорт,0.0,316112,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-01,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,316161,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-01,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,316186,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-01,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,316211,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-02,03:00-04:00,ОЕС України,Молдова,експорт,0.0,316476,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-02,03:00-04:00,ОЕС України,Польща,експорт,0.0,316501,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-02,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,316550,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-02,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,316575,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-02,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,316600,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-03,03:00-04:00,ОЕС України,Молдова,експорт,0.0,316865,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-03,03:00-04:00,ОЕС України,Польща,експорт,0.0,316890,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-03,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,316939,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-03,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,316964,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-03,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,316989,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-04,03:00-04:00,ОЕС України,Молдова,експорт,0.0,317254,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-04,03:00-04:00,ОЕС України,Польща,експорт,0.0,317279,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-04,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,317328,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-04,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,317353,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-04,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,317378,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-05,03:00-04:00,ОЕС України,Молдова,експорт,0.0,317643,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-05,03:00-04:00,ОЕС України,Польща,експорт,0.0,317668,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-05,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,317717,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-05,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,317742,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-05,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,317767,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-06,03:00-04:00,ОЕС України,Молдова,експорт,0.0,318032,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-06,03:00-04:00,ОЕС України,Польща,експорт,0.0,318057,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-06,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,318106,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-06,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,318131,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-06,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,318156,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-07,03:00-04:00,ОЕС України,Молдова,експорт,0.0,318421,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-07,03:00-04:00,ОЕС України,Польща,експорт,0.0,318446,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-07,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,318495,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-07,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,318520,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-07,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,318545,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-08,03:00-04:00,ОЕС України,Молдова,експорт,0.0,318810,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-08,03:00-04:00,ОЕС України,Польща,експорт,0.0,318835,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-08,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,318884,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-08,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,318909,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-08,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,318934,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-09,03:00-04:00,ОЕС України,Молдова,експорт,0.0,319199,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-09,03:00-04:00,ОЕС України,Польща,експорт,0.0,319224,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-09,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,319273,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-09,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,319298,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-09,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,319323,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-10,03:00-04:00,ОЕС України,Молдова,експорт,0.0,319588,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-10,03:00-04:00,ОЕС України,Польща,експорт,0.0,319613,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-10,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,319662,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-10,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,319687,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-10,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,319712,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-11,03:00-04:00,ОЕС України,Молдова,експорт,0.0,319977,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-11,03:00-04:00,ОЕС України,Польща,експорт,0.0,320002,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-11,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,320051,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-11,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,320076,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-11,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,320101,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-12,03:00-04:00,ОЕС України,Молдова,експорт,0.0,320366,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-12,03:00-04:00,ОЕС України,Польща,експорт,0.0,320391,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-12,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,320440,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-12,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,320465,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-12,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,320490,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-13,03:00-04:00,ОЕС України,Молдова,експорт,0.0,320755,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-13,03:00-04:00,ОЕС України,Польща,експорт,0.0,320780,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-13,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,320829,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-13,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,320854,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-13,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,320879,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-14,03:00-04:00,ОЕС України,Молдова,експорт,0.0,321144,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-14,03:00-04:00,ОЕС України,Польща,експорт,0.0,321169,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-14,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,321218,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-14,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,321243,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-14,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,321268,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-15,03:00-04:00,ОЕС України,Молдова,експорт,0.0,321533,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-15,03:00-04:00,ОЕС України,Польща,експорт,0.0,321558,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-15,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,321607,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-15,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,321632,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-15,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,321657,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-16,03:00-04:00,ОЕС України,Молдова,експорт,0.0,321922,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-16,03:00-04:00,ОЕС України,Польща,експорт,0.0,321947,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-16,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,321996,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-16,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,322021,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-16,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,322046,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-17,03:00-04:00,ОЕС України,Молдова,експорт,0.0,322311,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-17,03:00-04:00,ОЕС України,Польща,експорт,0.0,322336,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-17,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,322385,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-17,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,322410,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-17,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,322435,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-18,03:00-04:00,ОЕС України,Молдова,експорт,0.0,322700,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-18,03:00-04:00,ОЕС України,Польща,експорт,0.0,322725,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-18,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,322774,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-18,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,322799,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-18,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,322824,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-19,03:00-04:00,ОЕС України,Молдова,експорт,0.0,323089,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-19,03:00-04:00,ОЕС України,Польща,експорт,0.0,323114,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-19,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,323163,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-19,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,323188,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-19,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,323213,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-20,03:00-04:00,ОЕС України,Молдова,експорт,0.0,323478,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-20,03:00-04:00,ОЕС України,Польща,експорт,0.0,323503,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-20,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,323552,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-20,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,323577,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-20,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,323602,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-21,03:00-04:00,ОЕС України,Молдова,експорт,0.0,323867,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-21,03:00-04:00,ОЕС України,Польща,експорт,0.0,323892,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-21,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,323941,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-21,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,323966,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-21,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,323991,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-22,03:00-04:00,ОЕС України,Молдова,експорт,0.0,324256,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-22,03:00-04:00,ОЕС України,Польща,експорт,0.0,324281,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-22,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,324330,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-22,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,324355,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-22,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,324380,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-23,03:00-04:00,ОЕС України,Молдова,експорт,0.0,324645,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-23,03:00-04:00,ОЕС України,Польща,експорт,0.0,324670,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-23,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,324719,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-23,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,324744,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-23,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,324769,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-24,03:00-04:00,ОЕС України,Молдова,експорт,0.0,325034,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-24,03:00-04:00,ОЕС України,Польща,експорт,0.0,325059,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-24,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,325108,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-24,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,325133,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-24,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,325158,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-25,03:00-04:00,ОЕС України,Молдова,експорт,0.0,325423,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-25,03:00-04:00,ОЕС України,Польща,експорт,0.0,325448,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-25,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,325497,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-25,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,325522,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-25,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,325547,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-26,03:00-04:00,ОЕС України,Молдова,експорт,0.0,325812,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-26,03:00-04:00,ОЕС України,Польща,експорт,0.0,325837,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-26,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,325886,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-26,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,325911,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-26,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,325936,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-27,03:00-04:00,ОЕС України,Молдова,експорт,0.0,326201,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-27,03:00-04:00,ОЕС України,Польща,експорт,0.0,326226,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-27,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,326275,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-27,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,326300,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-27,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,326325,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-28,03:00-04:00,ОЕС України,Молдова,експорт,0.0,326590,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-28,03:00-04:00,ОЕС України,Польща,експорт,0.0,326615,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-28,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,326664,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-28,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,326689,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-28,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,326714,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-29,03:00-04:00,ОЕС України,Молдова,експорт,0.0,326979,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-29,03:00-04:00,ОЕС України,Польща,експорт,0.0,327004,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-29,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,327053,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-29,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,327078,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-29,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,327103,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-30,03:00-04:00,ОЕС України,Молдова,експорт,0.0,327368,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-30,03:00-04:00,ОЕС України,Польща,експорт,0.0,327393,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-30,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,327442,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-30,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,327467,october_2021_extra_zero,user_decision_after_source_comparison
+2021-10-30,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,327492,october_2021_extra_zero,user_decision_after_source_comparison
+2020-03-29,03:00-04:00,ОЕС України,Білорусь,експорт,0.0,104453,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Білорусь-0.4-110,експорт,0.0,104477,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Молдова,експорт,0.0,104501,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Польща,експорт,0.0,104525,spring_legacy_extra_zero,external_time_structure_check
+2020-03-29,03:00-04:00,ОЕС України,Російська Федерація,експорт,0.0,104549,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,104573,spring_legacy_extra_zero,external_time_structure_check
+2020-03-29,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,104597,spring_legacy_extra_zero,external_time_structure_check
+2020-03-29,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,104621,spring_legacy_extra_zero,external_time_structure_check
+2020-03-29,03:00-04:00,ОЕС України,Білорусь,імпорт,0.0,104645,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Білорусь-0.4-110,імпорт,0.0,104669,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Молдова,імпорт,0.0,104693,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Польща,імпорт,0.0,104717,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,ОЕС України,Російська Федерація,імпорт,0.0,104741,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2020-03-29,03:00-04:00,Бурштинський енергоострів,Румунія,імпорт,0.0,104765,spring_legacy_extra_zero,external_time_structure_check
+2020-03-29,03:00-04:00,Бурштинський енергоострів,Словаччина,імпорт,0.0,104789,spring_legacy_extra_zero,external_time_structure_check
+2020-03-29,03:00-04:00,Бурштинський енергоострів,Угорщина,імпорт,0.0,104813,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,ОЕС України,Білорусь,експорт,0.0,244231,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,ОЕС України,Білорусь-0.4-110,експорт,0.0,244255,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,ОЕС України,Молдова,експорт,0.0,244279,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,ОЕС України,Польща,експорт,0.0,244303,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,ОЕС України,Російська Федерація,експорт,0.0,244327,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,Бурштинський енергоострів,Румунія,експорт,0.0,244351,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,Бурштинський енергоострів,Словаччина,експорт,0.0,244375,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,Бурштинський енергоострів,Угорщина,експорт,0.0,244399,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,ОЕС України,Білорусь,імпорт,0.0,244423,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,ОЕС України,Білорусь-0.4-110,імпорт,0.0,244447,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,ОЕС України,Молдова,імпорт,0.0,244471,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,ОЕС України,Польща,імпорт,0.0,244495,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,ОЕС України,Російська Федерація,імпорт,0.0,244519,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2021-03-28,03:00-04:00,Бурштинський енергоострів,Румунія,імпорт,0.0,244543,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,Бурштинський енергоострів,Словаччина,імпорт,0.0,244567,spring_legacy_extra_zero,external_time_structure_check
+2021-03-28,03:00-04:00,Бурштинський енергоострів,Угорщина,імпорт,0.0,244591,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,експорт,0.0,379698,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,експорт,0.0,379722,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,експорт,0.0,379746,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,експорт,0.0,379770,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,експорт,0.0,379794,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,імпорт,0.0,379818,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,імпорт,0.0,379842,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,імпорт,0.0,379866,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,імпорт,0.0,379890,spring_legacy_extra_zero,external_time_structure_check
+2022-03-27,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,імпорт,0.0,379914,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,експорт,0.0,467058,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,експорт,0.0,467082,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,експорт,0.0,467106,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,експорт,0.0,467130,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,експорт,0.0,467154,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,імпорт,0.0,467178,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,імпорт,0.0,467202,spring_legacy_extra_zero,user_approved_pattern_assumption_no_external_confirmation
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,імпорт,0.0,467226,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,імпорт,0.0,467250,spring_legacy_extra_zero,external_time_structure_check
+2023-03-26,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,імпорт,0.0,467274,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,експорт,0.0,556098,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,експорт,0.0,556122,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,експорт,0.0,556146,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,експорт,0.0,556170,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,експорт,0.0,556194,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Молдова,імпорт,0.0,556218,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Польща,імпорт,0.0,556242,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Румунія,імпорт,0.0,556266,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Словаччина,імпорт,0.0,556290,spring_legacy_extra_zero,external_time_structure_check
+2024-03-31,03:00-04:00,ОЕС України (синхронізована з ENTSO-E),Угорщина,імпорт,0.0,556314,spring_legacy_extra_zero,external_time_structure_check
