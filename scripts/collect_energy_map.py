@@ -117,7 +117,22 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except (ValueError, OSError, UnicodeError, csv.Error, HTTPError, URLError) as error:
+    except HTTPError as error:
+        hints = {
+            301: 'Download endpoint redirected',
+            302: 'Download endpoint redirected',
+            307: 'Download endpoint redirected',
+            308: 'Download endpoint redirected',
+            401: 'Check ENERGY_MAP_TOKEN repository secret',
+            403: 'Check token permissions and dataset access',
+            404: 'Check dataset download endpoint',
+            429: 'API quota or rate limit reached',
+        }
+        hint = hints.get(error.code, 'Check Energy Map service availability')
+        print(f'Energy Map failed (HTTP {error.code}): {hint}; no automatic retry.',
+              file=sys.stderr)
+        sys.exit(1)
+    except (ValueError, OSError, UnicodeError, csv.Error, URLError) as error:
         # Do not print request headers, tokens, or arbitrary server bodies.
         print(f'Energy Map failed ({type(error).__name__}); no automatic retry.', file=sys.stderr)
         sys.exit(1)
