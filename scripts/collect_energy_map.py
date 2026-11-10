@@ -80,7 +80,14 @@ def due(directory, now):
 
 
 def download(token):
-    request = Request(DOWNLOAD_URL, headers={'Authorization': f'Token {token}'})
+    # Identify the application: Cloudflare rejects urllib's default user agent.
+    request = Request(DOWNLOAD_URL, headers={
+        'Authorization': f'Token {token}',
+        'User-Agent': (
+            'UkraineElectricityMarket/1.0 '
+            '(https://github.com/Tetiana-Mokliak/ukraine-electricity-market)'
+        ),
+    })
     # urllib does not retry HTTP failures here; redirect handler blocks extra GETs.
     with build_opener(NoRedirect()).open(request, timeout=60) as response:
         if response.status != 200:
